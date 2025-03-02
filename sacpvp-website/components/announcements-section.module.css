@@ -1,0 +1,104 @@
+.announcementsSection {
+  background-color: var(--muted);
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.announcementsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.iconWrapper {
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.icon {
+  color: white;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.cardDate {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.cardExcerpt {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.viewAllLink {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.viewAllLink a {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.viewAllLink a:hover {
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .iconWrapper {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.noAnnouncements {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a5568;
+  padding: 2rem 0;
+}
+

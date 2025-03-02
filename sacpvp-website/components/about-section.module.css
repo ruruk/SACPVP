@@ -1,0 +1,35 @@
+.aboutSection {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.content {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #4a5568;
+}
+
+.comingSoon {
+  background-color: #ebf8ff;
+  border-left: 4px solid var(--primary);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.comingSoon p {
+  font-weight: 500;
+}
+

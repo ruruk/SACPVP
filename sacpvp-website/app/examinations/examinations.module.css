@@ -1,0 +1,130 @@
+.examinationsPage {
+  padding: 8rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.eventInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.eventInfoItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.eventInfoItem .icon {
+  color: var(--secondary);
+  margin-right: 0.5rem;
+}
+
+.daySection {
+  margin-bottom: 3rem;
+}
+
+.dayTitle {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.5rem;
+}
+
+.scheduleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.scheduleCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scheduleCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.iconWrapper {
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconWrapper svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.time {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-bottom: 0.25rem;
+}
+
+.topic {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: right;
+  font-style: italic;
+  color: #4a5568;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .eventInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dayTitle {
+    font-size: 1.5rem;
+  }
+
+  .scheduleGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

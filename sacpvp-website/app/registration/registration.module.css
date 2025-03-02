@@ -1,0 +1,165 @@
+.registration {
+  padding: 8rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cardHeader svg {
+  color: var(--primary);
+  margin-right: 0.75rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.cardList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cardList li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.cardList li::before {
+  content: "•";
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+}
+
+.note {
+  background-color: #ebf8ff;
+  border-left: 4px solid var(--primary);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 2rem;
+}
+
+.applicationNote {
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.applicationNote .icon {
+  color: var(--primary);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.downloadButton:hover {
+  background-color: #1a5eb3;
+}
+
+.downloadButton svg {
+  margin-right: 0.5rem;
+}
+
+.rulesButton {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.rulesButton:hover {
+  background-color: #e69500;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .applicationNote {
+    flex-direction: column;
+  }
+
+  .applicationNote .icon {
+    margin-bottom: 1rem;
+  }
+}
+
