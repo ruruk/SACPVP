@@ -13,35 +13,21 @@ export default function LinksSection() {
             title="Examinations"
             description="Information about upcoming examinations and past papers."
             icon={<BookOpen size={32} className={styles.icon} />}
-            href="/examinations"
+            href="/examinations.html"
           />
-
-          {/* <LinkCard
-            title="Workshop Program"
-            description="View our schedule of workshops and professional development events."
-            icon={<Calendar size={32} className={styles.icon} />}
-            href="/workshop"
-          /> */}
-
-          {/* <LinkCard
-            title="Annual Reports"
-            description="Access our annual reports and financial statements."
-            icon={<FileText size={32} className={styles.icon} />}
-            href="#"
-          /> */}
 
           <LinkCard
             title="Announcements"
             description="Stay updated with the latest news and announcements."
             icon={<Bell size={32} className={styles.icon} />}
-            href="/announcements"
+            href="/announcements.html"
           />
 
           <LinkCard
             title="Registration"
             description="Information about registering as a property valuer."
             icon={<UserPlus size={32} className={styles.icon} />}
-            href="/registration"
+            href="/registration.html"
           />
         </div>
       </div>
