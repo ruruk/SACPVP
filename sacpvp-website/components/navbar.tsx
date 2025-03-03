@@ -37,9 +37,9 @@ export default function Navbar() {
 
             <nav className={styles.desktopNav}>
               <NavLink href="/">Home</NavLink>
-              <NavLink href="/announcements">Announcements</NavLink>
-              <NavLink href="/registration">Registration</NavLink>
-              <NavLink href="/examinations">Examinations</NavLink>
+              <NavLink href="/announcements.html">Announcements</NavLink>
+              <NavLink href="/registration.html">Registration</NavLink>
+              <NavLink href="/examinations.html">Examinations</NavLink>
               {/* <NavLink href="/workshop">Workshop</NavLink> */}
             </nav>
           </div>
@@ -59,13 +59,22 @@ export default function Navbar() {
             <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
               Home
             </NavLink>
-            <NavLink href="/announcements" onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              href="/announcements.html"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Announcements
             </NavLink>
-            <NavLink href="/registration" onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              href="/registration.html"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Registration
             </NavLink>
-            <NavLink href="/examinations" onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              href="/examinations.html"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Examinations
             </NavLink>
             {/* <NavLink href="/workshop" onClick={() => setIsMenuOpen(false)}>

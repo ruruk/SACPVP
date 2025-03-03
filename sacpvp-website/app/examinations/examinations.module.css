@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .eventInfoItem {
@@ -30,6 +30,29 @@
 
 .eventInfoItem .icon {
   color: var(--secondary);
+  margin-right: 0.5rem;
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0 auto 2rem;
+  max-width: 280px;
+}
+
+.downloadButton:hover {
+  background-color: #1a5eb3;
+}
+
+.downloadButton svg {
   margin-right: 0.5rem;
 }
 
@@ -127,4 +150,3 @@
     grid-template-columns: 1fr;
   }
 }
-

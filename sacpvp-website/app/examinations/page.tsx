@@ -1,27 +1,50 @@
-import type { Metadata } from "next"
-import { Calendar, MapPin, Coffee, Users, BookOpen, MessageCircle, FileText } from "lucide-react"
-import styles from "./examinations.module.css"
+import type { Metadata } from "next";
+import {
+  Calendar,
+  MapPin,
+  Coffee,
+  Users,
+  BookOpen,
+  MessageCircle,
+  FileText,
+  Download,
+} from "lucide-react";
+import styles from "./examinations.module.css";
 
 export const metadata: Metadata = {
   title: "Examinations - SACPVP",
   description:
     "Information about upcoming examinations and pre-exam workshops for property valuers in South Africa. View schedules and topics covered.",
-  keywords: "SACPVP examinations, property valuer exams, South Africa valuation workshops, pre-exam preparation",
-}
+  keywords:
+    "SACPVP examinations, property valuer exams, South Africa valuation workshops, pre-exam preparation",
+};
 
 export default function Examinations() {
   const workshopData = [
     {
       date: "06 March 2025",
       schedule: [
-        { time: "9:00am to 9:30am", topic: "Arrival (Registration)", icon: <Users /> },
-        { time: "9:30am to 10:00am", topic: "Introduction (SACPVP) Registrar & Registration Team", icon: <Users /> },
+        {
+          time: "9:00am to 9:30am",
+          topic: "Arrival (Registration)",
+          icon: <Users />,
+        },
+        {
+          time: "9:30am to 10:00am",
+          topic: "Introduction (SACPVP) Registrar & Registration Team",
+          icon: <Users />,
+        },
         { time: "10:00am to 10:30am", topic: "Tea Break", icon: <Coffee /> },
-        { time: "10:30am to 1:00pm", topic: "Time Value of Money: Mr Maarten van Doesburgh", icon: <BookOpen /> },
+        {
+          time: "10:30am to 1:00pm",
+          topic: "Time Value of Money: Mr Maarten van Doesburgh",
+          icon: <BookOpen />,
+        },
         { time: "1:00pm to 1:45pm", topic: "Lunch Break", icon: <Coffee /> },
         {
           time: "1:45pm to 4:30pm",
-          topic: "Time Value of Money: Mr Maarten van Doesburgh Question & Answer session",
+          topic:
+            "Time Value of Money: Mr Maarten van Doesburgh Question & Answer session",
           icon: <MessageCircle />,
         },
       ],
@@ -29,8 +52,16 @@ export default function Examinations() {
     {
       date: "07 March 2025",
       schedule: [
-        { time: "9:00am to 9:30am", topic: "Arrival (Registration)", icon: <Users /> },
-        { time: "9:30am to 10:30am", topic: "Time Value of Money: Mr Maarten van Doesburgh", icon: <BookOpen /> },
+        {
+          time: "9:00am to 9:30am",
+          topic: "Arrival (Registration)",
+          icon: <Users />,
+        },
+        {
+          time: "9:30am to 10:30am",
+          topic: "Time Value of Money: Mr Maarten van Doesburgh",
+          icon: <BookOpen />,
+        },
         { time: "10:30am to 11:00am", topic: "Tea Break", icon: <Coffee /> },
         {
           time: "11:00am to 12:00pm",
@@ -45,7 +76,7 @@ export default function Examinations() {
         { time: "1:30pm", topic: "Lunch and Departure", icon: <Coffee /> },
       ],
     },
-  ]
+  ];
 
   return (
     <div className={styles.examinationsPage}>
@@ -58,9 +89,20 @@ export default function Examinations() {
           </div>
           <div className={styles.eventInfoItem}>
             <MapPin className={styles.icon} />
-            <span>NG Kerk Stellastraat, 154 Stella Street, Waterkloof, Pretoria</span>
+            <span>
+              NG Kerk Stellastraat, 154 Stella Street, Waterkloof, Pretoria
+            </span>
           </div>
         </div>
+
+        <a
+          href="/Pre-Exam Workshop Programme - March 2025.pdf"
+          download
+          className={styles.downloadButton}
+        >
+          <Download size={20} />
+          Download Schedule PDF
+        </a>
 
         {workshopData.map((day, index) => (
           <div key={index} className={styles.daySection}>
@@ -88,6 +130,5 @@ export default function Examinations() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

@@ -34,9 +34,9 @@ export default function Footer() {
             <h3 className={styles.sectionTitle}>Quick Links</h3>
             <ul className={styles.linkList}>
               <FooterLink href="/">Home</FooterLink>
-              <FooterLink href="/announcements">Announcements</FooterLink>
-              <FooterLink href="/registration">Registration</FooterLink>
-              <FooterLink href="/examinations">Examinations</FooterLink>
+              <FooterLink href="/announcements.html">Announcements</FooterLink>
+              <FooterLink href="/registration.html">Registration</FooterLink>
+              <FooterLink href="/examinations.html">Examinations</FooterLink>
             </ul>
           </div>
 
@@ -58,11 +58,11 @@ export default function Footer() {
             <ul className={styles.contactList}>
               <li className={styles.contactItem}>
                 <Phone size={20} className={styles.contactIcon} />
-                <span>(012) 123 4567</span>
+                <span>012 348 8643</span>
               </li>
               <li className={styles.contactItem}>
                 <Mail size={20} className={styles.contactIcon} />
-                <span>info@sacpvp.org.za</span>
+                <span>info@sacpvp.co.za</span>
               </li>
               <li className={styles.contactItem}>
                 <MapPin size={20} className={styles.contactIcon} />
@@ -119,4 +119,3 @@ function SocialIcon({ icon, href }: { icon: React.ReactNode; href: string }) {
     </a>
   );
 }
-
