@@ -13,6 +13,136 @@
   text-align: center;
 }
 
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.5rem;
+}
+
+.sectionIcon {
+  margin-right: 0.75rem;
+  color: var(--secondary);
+}
+
+.noExaminations {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border: 1px dashed #d1d5db;
+}
+
+.alertIcon {
+  color: var(--secondary);
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.checkBack {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Accordion Styles */
+.accordionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordionItem {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f9fafb;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.accordionHeader:hover {
+  background-color: #f3f4f6;
+}
+
+.accordionTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionTitle h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0;
+}
+
+.accordionDate {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0.25rem 0 0 0;
+}
+
+.accordionIcon {
+  color: var(--secondary);
+  transition: transform 0.3s ease;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordionOpen {
+  max-height: 2000px; /* Arbitrary large value */
+}
+
+.examinationCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.pastExam {
+  border-left: none;
+  opacity: 1;
+}
+
+.examTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .eventInfo {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +175,7 @@
   text-decoration: none;
   transition: background-color 0.3s ease;
   margin: 0 auto 2rem;
-  max-width: 280px;
+  max-width: 250px;
 }
 
 .downloadButton:hover {
@@ -61,10 +191,10 @@
 }
 
 .dayTitle {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: var(--primary);
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 1px solid #e5e7eb;
   padding-bottom: 0.5rem;
 }
 
@@ -137,16 +267,24 @@
     font-size: 2rem;
   }
 
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
   .eventInfo {
     flex-direction: column;
     align-items: center;
   }
 
   .dayTitle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .scheduleGrid {
     grid-template-columns: 1fr;
+  }
+
+  .accordionTitle h3 {
+    font-size: 1.1rem;
   }
 }
