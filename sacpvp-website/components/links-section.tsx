@@ -1,5 +1,5 @@
 import type React from "react";
-import { BookOpen, Calendar, FileText, Bell, UserPlus } from "lucide-react";
+import { BookOpen, Bell, UserPlus, Briefcase } from "lucide-react";
 import styles from "./links-section.module.css";
 
 export default function LinksSection() {
@@ -12,22 +12,29 @@ export default function LinksSection() {
           <LinkCard
             title="Examinations"
             description="Information about upcoming examinations and past papers."
-            icon={<BookOpen size={32} className={styles.icon} />}
+            icon={<BookOpen className={styles.icon} />}
             href="/examinations.html"
           />
 
           <LinkCard
             title="Announcements"
             description="Stay updated with the latest news and announcements."
-            icon={<Bell size={32} className={styles.icon} />}
+            icon={<Bell className={styles.icon} />}
             href="/announcements.html"
           />
 
           <LinkCard
             title="Registration"
             description="Information about registering as a property valuer."
-            icon={<UserPlus size={32} className={styles.icon} />}
+            icon={<UserPlus className={styles.icon} />}
             href="/registration.html"
+          />
+
+          <LinkCard
+            title="Job Posts"
+            description="View available job opportunities in the property valuation profession."
+            icon={<Briefcase className={styles.icon} />}
+            href="/job-posts.html"
           />
         </div>
       </div>
@@ -47,7 +54,7 @@ function LinkCard({
   href: string;
 }) {
   return (
-    <a href={href} className={`card ${styles.linkCard}`}>
+    <a href={href} className={styles.linkCard}>
       <div className={styles.iconWrapper}>{icon}</div>
       <h3 className={styles.cardTitle}>{title}</h3>
       <p className={styles.cardDescription}>{description}</p>

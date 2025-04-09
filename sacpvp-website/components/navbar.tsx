@@ -40,7 +40,7 @@ export default function Navbar() {
               <NavLink href="/announcements.html">Announcements</NavLink>
               <NavLink href="/registration.html">Registration</NavLink>
               <NavLink href="/examinations.html">Examinations</NavLink>
-              {/* <NavLink href="/workshop">Workshop</NavLink> */}
+              <NavLink href="/job-posts.html">Job Posts</NavLink>
             </nav>
           </div>
 
@@ -77,9 +77,12 @@ export default function Navbar() {
             >
               Examinations
             </NavLink>
-            {/* <NavLink href="/workshop" onClick={() => setIsMenuOpen(false)}>
-              Workshop
-            </NavLink> */}
+            <NavLink
+              href="/job-posts.html"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Job Posts
+            </NavLink>
           </nav>
         </div>
       )}

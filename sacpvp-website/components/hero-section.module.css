@@ -1,12 +1,12 @@
 .hero {
   background-color: var(--primary);
   color: white;
-  padding: 8rem 0 4rem;
-  min-height: calc(
-    100vh - 6rem
-  ); /* Adjust this value based on your navbar height */
-  display: flex;
-  align-items: center;
+  padding: 2.5rem 0;
+  margin: 0 1.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
 }
 
 .content {
@@ -16,61 +16,174 @@
   text-align: center;
 }
 
+.textContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .logoContainer {
-  width: 8rem;
-  height: 8rem;
+  width: 80px;
+  height: 80px;
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
-  border-radius: 5px;
+  margin: 0 auto 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .title {
   font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .description {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   max-width: 36rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
 }
 
 .cta {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
+}
+
+.quickLinksBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--secondary);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1.1rem 1.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.quickLinksBtn:hover {
+  background-color: #e69500;
+  transform: translateY(-2px);
 }
 
 .learnMoreBtn {
-  background-color: white;
-  color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .learnMoreBtn:hover {
-  background-color: #f3f4f6;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.imageContainer {
+  display: none;
 }
 
 @media (min-width: 640px) {
+  .hero {
+    margin: 0 2rem 2rem;
+  }
+
   .cta {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
 @media (min-width: 768px) {
   .hero {
-    padding: 8rem 0 6rem;
+    margin: 0 3rem 2.5rem;
   }
 
-  .title {
-    font-size: 3rem;
+  .content {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    gap: 2rem;
   }
 
-  .description {
-    font-size: 1.5rem;
+  .textContent {
+    flex: 1;
+    margin: 0;
+  }
+
+  .logoContainer {
+    margin: 0 0 1.25rem 0;
+  }
+
+  .cta {
+    justify-content: flex-start;
+  }
+
+  .imageContainer {
+    display: block;
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .decorativeImage {
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .decorativeImage::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+  }
+
+  .decorativeImage::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
   }
 }
 
+@media (min-width: 1024px) {
+  .hero {
+    margin: 0 4rem 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    margin: 0 6rem 3rem;
+  }
+}
