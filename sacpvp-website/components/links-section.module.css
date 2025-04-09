@@ -1,14 +1,15 @@
 .linksSection {
   padding: 2rem 0 3rem;
-  margin: 0 1.5rem;
+  background-color: white;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
   color: var(--primary);
+  padding-left: 0.5rem;
 }
 
 .linkGrid {
@@ -78,34 +79,10 @@
   .linkGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .linksSection {
-    margin: 0 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .linksSection {
-    margin: 0 3rem;
-  }
 }
 
 @media (min-width: 1024px) {
   .linkGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .linksSection {
-    margin: 0 4rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .linkGrid {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .linksSection {
-    margin: 0 6rem;
   }
 }

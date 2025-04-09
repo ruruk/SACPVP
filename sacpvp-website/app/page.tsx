@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import HeroSection from "@/components/hero-section";
 import LinksSection from "@/components/links-section";
 import AboutSection from "@/components/about-section";
 import AnnouncementsSection from "@/components/announcements-section";
+import ConstructionNotice from "@/components/construction-notice";
 
 export const metadata: Metadata = {
   title: "SACPVP - South African Council for the Property Valuers Profession",
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div style={{ paddingTop: "150px" }}>
-      <HeroSection />
-      <AnnouncementsSection />
+    <div style={{ paddingTop: "120px" }}>
       <LinksSection />
+      <AnnouncementsSection />
       <AboutSection />
+      <ConstructionNotice />
     </div>
   );
 }

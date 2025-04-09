@@ -1,15 +1,14 @@
 .aboutSection {
   padding: 3rem 0 4rem;
-  margin: 0 1.5rem;
+  background-color: white;
 }
 
 .content {
-  max-width: 48rem;
-  margin: 0 auto;
   background-color: var(--muted);
   border-radius: 1.5rem;
   padding: 2.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0 1.5rem;
 }
 
 .title {
@@ -40,32 +39,26 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .content {
-    padding: 1.5rem;
-  }
-}
-
 @media (min-width: 640px) {
-  .aboutSection {
+  .content {
     margin: 0 2rem;
   }
 }
 
 @media (min-width: 768px) {
-  .aboutSection {
+  .content {
     margin: 0 3rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .aboutSection {
+  .content {
     margin: 0 4rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .aboutSection {
+  .content {
     margin: 0 6rem;
   }
 }
