@@ -1,0 +1,217 @@
+.widgetContainer {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eaeaea;
+}
+
+.widgetContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.widgetTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.widgetDescription {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchBox {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  color: #666;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.clearButton {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #999;
+  cursor: pointer;
+}
+
+.searchButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.searchButton:hover {
+  background-color: #0060df;
+}
+
+.resultsContainer {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.resultsList {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.resultCard {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.resultCard:last-child {
+  border-bottom: none;
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resultIcon {
+  color: #666;
+}
+
+.resultName {
+  font-weight: 500;
+  color: #333;
+}
+
+.resultDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1.75rem;
+  font-size: 0.85rem;
+}
+
+.resultType {
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.statusProfessional {
+  background-color: #e6f7ff;
+  color: #0070f3;
+}
+
+.statusAssociated {
+  background-color: #f0f5ff;
+  color: #2f54eb;
+}
+
+.statusCandidate {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.activeStatus,
+.inactiveStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.activeStatus {
+  color: #52c41a;
+}
+
+.inactiveStatus {
+  color: #ff4d4f;
+}
+
+.viewMoreLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: #f5f5f5;
+  color: #0070f3;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.viewMoreLink:hover {
+  background-color: #e6f7ff;
+}
+
+.noResults {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.widgetFooter {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.viewAllLink {
+  color: #0070f3;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.viewAllLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .searchForm {
+    flex-direction: column;
+  }
+
+  .searchButton {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
