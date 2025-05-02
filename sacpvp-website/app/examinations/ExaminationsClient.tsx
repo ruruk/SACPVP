@@ -14,6 +14,9 @@ import {
   History,
   ChevronDown,
   ChevronUp,
+  Clock,
+  DollarSign,
+  CalendarDays,
 } from "lucide-react";
 import styles from "./examinations.module.css";
 import examinationsData from "@/data/examinations.json";
@@ -59,11 +62,78 @@ export default function ExaminationsClient() {
 
           {upcomingExaminations.length > 0 ? (
             upcomingExaminations.map((exam) => (
-              <ExaminationDetails
-                key={exam.id}
-                examination={exam}
-                renderIcon={renderIcon}
-              />
+              <div key={exam.id} className={styles.examinationCard}>
+                <h3 className={styles.examTitle}>{exam.title}</h3>
+                <div className={styles.eventInfo}>
+                  <div className={styles.eventInfoItem}>
+                    <MapPin className={styles.icon} />
+                    <span>{exam.venue}</span>
+                  </div>
+                </div>
+
+                {exam.pdfUrl && (
+                  <a
+                    href={exam.pdfUrl}
+                    download
+                    className={styles.downloadButton}
+                  >
+                    <Download size={20} />
+                    Download Schedule PDF
+                  </a>
+                )}
+
+                {exam.days && (
+                  <ExaminationDetails
+                    examination={exam}
+                    renderIcon={renderIcon}
+                  />
+                )}
+
+                {exam.events && (
+                  <div className={styles.eventsTable}>
+                    <div className={styles.tableHeader}>
+                      <div className={styles.tableHeaderCell}>
+                        <CalendarDays className={styles.tableIcon} />
+                        Event
+                      </div>
+                      <div className={styles.tableHeaderCell}>
+                        <Clock className={styles.tableIcon} />
+                        Registration Period
+                      </div>
+                      <div className={styles.tableHeaderCell}>
+                        <Calendar className={styles.tableIcon} />
+                        Event Date
+                      </div>
+                      <div className={styles.tableHeaderCell}>
+                        <DollarSign className={styles.tableIcon} />
+                        Payment Due Date
+                      </div>
+                    </div>
+                    {exam.events.map((event, index) => (
+                      <div key={index} className={styles.tableRow}>
+                        <div className={styles.tableCell}>
+                          {event.eventType}
+                        </div>
+                        <div className={styles.tableCell}>
+                          {event.registrationPeriod}
+                        </div>
+                        <div className={styles.tableCell}>
+                          {event.eventDate}
+                        </div>
+                        <div className={styles.tableCell}>
+                          {event.paymentDueDate}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <div className={styles.footer}>
+                  <p>Yours faithfully,</p>
+                  <p>ND Naidoo</p>
+                  <p>Registrar</p>
+                </div>
+              </div>
             ))
           ) : (
             <div className={styles.noExaminations}>
@@ -137,7 +207,9 @@ export default function ExaminationsClient() {
   }) {
     return (
       <div
-        className={`${styles.examinationCard} ${isPast ? styles.pastExam : ""}`}
+        className={`${styles.examinationDetails} ${
+          isPast ? styles.pastExam : ""
+        }`}
       >
         <div className={styles.eventInfo}>
           <div className={styles.eventInfoItem}>
@@ -146,7 +218,7 @@ export default function ExaminationsClient() {
           </div>
         </div>
 
-        {examination.pdfUrl && (
+        {examination.pdfUrl && isPast && (
           <a
             href={examination.pdfUrl}
             download
@@ -178,12 +250,6 @@ export default function ExaminationsClient() {
               </div>
             </div>
           ))}
-
-        <div className={styles.footer}>
-          <p>Yours faithfully,</p>
-          <p>ND Naidoo</p>
-          <p>Registrar</p>
-        </div>
       </div>
     );
   }

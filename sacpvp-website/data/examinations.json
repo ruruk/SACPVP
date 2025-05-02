@@ -1,5 +1,75 @@
 {
-  "upcomingExaminations": [],
+  "upcomingExaminations": [
+    {
+      "id": 2,
+      "title": "Examination Schedule 2025-2026",
+      "date": "2025-2026",
+      "venue": "NG Kerk Stellastraat, 154 Stella Street, Waterkloof, Pretoria",
+      "pdfUrl": "/EXAMINATION INFO_2025_2026_2.pdf",
+      "events": [
+        {
+          "eventType": "Pre-Exam Workshop",
+          "registrationPeriod": "1 February – 28 Feb 2025",
+          "eventDate": "6 & 7 March 2025",
+          "paymentDueDate": "28 February 2025"
+        },
+        {
+          "eventType": "Examination",
+          "registrationPeriod": "1 October – 30 Nov 2024",
+          "eventDate": "19 March 2025",
+          "paymentDueDate": "28 February 2025"
+        },
+        {
+          "eventType": "Supplementary Examination",
+          "registrationPeriod": "1 May - 30 May 2025",
+          "eventDate": "30 May 2025",
+          "paymentDueDate": "30 May 2025"
+        },
+        {
+          "eventType": "Practical Workschool",
+          "registrationPeriod": "1 May – 31 July 2025",
+          "eventDate": "25 – 29 August 2025",
+          "paymentDueDate": "31 July 2025"
+        },
+        {
+          "eventType": "Pre-Exam Workshop",
+          "registrationPeriod": "1 August – 29 August 2025",
+          "eventDate": "3 & 4 September 2025",
+          "paymentDueDate": "29 August 2025"
+        },
+        {
+          "eventType": "Examination",
+          "registrationPeriod": "1 May – 30 June 2025",
+          "eventDate": "17 September 2025",
+          "paymentDueDate": "29 August 2025"
+        },
+        {
+          "eventType": "Supplementary Examination",
+          "registrationPeriod": "11 – 21 November 2025",
+          "eventDate": "27 November 2025",
+          "paymentDueDate": "21 November 2025"
+        },
+        {
+          "eventType": "Pre-Exam Workshop",
+          "registrationPeriod": "18 – 28 February 2025",
+          "eventDate": "5 & 6 March 2026",
+          "paymentDueDate": "28 February 2025"
+        },
+        {
+          "eventType": "Examination",
+          "registrationPeriod": "1 October – 30 Nov 2025",
+          "eventDate": "18 March 2026",
+          "paymentDueDate": "28 February 2026"
+        },
+        {
+          "eventType": "Supplementary Examination",
+          "registrationPeriod": "1 May – 30 May 2026",
+          "eventDate": "29 May 2026",
+          "paymentDueDate": "15 June 2026"
+        }
+      ]
+    }
+  ],
   "pastExaminations": [
     {
       "id": 1,
