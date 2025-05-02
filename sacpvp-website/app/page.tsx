@@ -6,7 +6,7 @@ import MemberSearchWidget from "@/components/member-search-widget";
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ paddingTop: "120px" }}>
       <div></div>
       <LinksSection />
       <AnnouncementsSection />

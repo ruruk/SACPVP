@@ -49,7 +49,7 @@ export default function ExaminationsClient() {
   };
 
   return (
-    <div className={styles.examinationsPage}>
+    <div className={styles.examinationsPage} style={{ paddingTop: "80px" }}>
       <div className="container">
         <h1 className={styles.pageTitle}>Examinations</h1>
 
