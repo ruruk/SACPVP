@@ -21,6 +21,11 @@ export default function AnnouncementsSection() {
     setOpenAccordion(openAccordion === id ? null : id);
   };
 
+  // Sort announcements by date (newest first)
+  const sortedAnnouncements = [...announcements].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
   return (
     <section className={styles.announcementsSectionWithDivider}>
       <div className="container">
@@ -32,9 +37,9 @@ export default function AnnouncementsSection() {
           </Link>
         </div>
 
-        {announcements.length > 0 ? (
+        {sortedAnnouncements.length > 0 ? (
           <div className={styles.announcementsList}>
-            {announcements.slice(0, 1).map((announcement) => (
+            {sortedAnnouncements.slice(0, 2).map((announcement) => (
               <div key={announcement.id} className={styles.accordionItem}>
                 <button
                   className={styles.accordionHeader}

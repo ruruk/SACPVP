@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: "SACPVP - Coming Soon",
   description:
     "South African Council for the Property Valuers Profession - New Website Coming Soon",
-  generator: "v0.dev",
 };
 
 export default function RootLayout({
@@ -23,6 +22,25 @@ export default function RootLayout({
         <link rel="icon" href="/placeholder-logo.png" />
       </head>
       <body>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-7VZBNP875Y`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7VZBNP875Y', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />
@@ -32,3 +50,4 @@ export default function RootLayout({
 }
 
 import "./globals.css";
+import Script from "next/script";

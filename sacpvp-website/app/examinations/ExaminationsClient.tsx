@@ -17,6 +17,8 @@ import {
   Clock,
   DollarSign,
   CalendarDays,
+  CheckCircle,
+  User,
 } from "lucide-react";
 import styles from "./examinations.module.css";
 import examinationsData from "@/data/examinations.json";
@@ -42,14 +44,23 @@ export default function ExaminationsClient() {
       case "message":
         return <MessageCircle />;
       case "file":
+      case "file-text":
         return <FileText />;
+      case "alert-circle":
+        return <AlertCircle />;
+      case "check-circle":
+        return <CheckCircle />;
+      case "dollar-sign":
+        return <DollarSign />;
+      case "user":
+        return <User />;
       default:
         return <Calendar />;
     }
   };
 
   return (
-    <div className={styles.examinationsPage} style={{ paddingTop: "80px" }}>
+    <div className={styles.examinationsPage}>
       <div className="container">
         <h1 className={styles.pageTitle}>Examinations</h1>
 
@@ -69,6 +80,12 @@ export default function ExaminationsClient() {
                     <MapPin className={styles.icon} />
                     <span>{exam.venue}</span>
                   </div>
+                  {exam.date && (
+                    <div className={styles.eventInfoItem}>
+                      <Calendar className={styles.icon} />
+                      <span>{exam.date}</span>
+                    </div>
+                  )}
                 </div>
 
                 {exam.pdfUrl && (
@@ -78,7 +95,7 @@ export default function ExaminationsClient() {
                     className={styles.downloadButton}
                   >
                     <Download size={20} />
-                    Download Schedule PDF
+                    Download PDF
                   </a>
                 )}
 
@@ -125,6 +142,39 @@ export default function ExaminationsClient() {
                         </div>
                       </div>
                     ))}
+                  </div>
+                )}
+
+                {exam.noticeType === "important" && exam.sections && (
+                  <div className={styles.noticeContainer}>
+                    {exam.sections.map((section, index) => (
+                      <div key={index} className={styles.noticeSection}>
+                        <h4 className={styles.noticeSectionTitle}>
+                          {renderIcon(section.icon)}
+                          <span>{section.title}</span>
+                        </h4>
+                        <ul className={styles.noticeList}>
+                          {section.items.map((item, itemIndex) => (
+                            <li key={itemIndex} className={styles.noticeItem}>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+
+                    {exam.contacts && (
+                      <div className={styles.contactsSection}>
+                        {exam.contacts.map((contact, index) => (
+                          <div key={index} className={styles.contactItem}>
+                            <strong>{contact.title}:</strong> {contact.name}
+                          </div>
+                        ))}
+                        <div className={styles.noticeDate}>
+                          <strong>Date:</strong> {exam.noticeDate}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
 

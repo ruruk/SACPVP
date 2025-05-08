@@ -1,11 +1,74 @@
 {
   "upcomingExaminations": [
     {
+      "id": 3,
+      "title": "Board Examination Notice - September 2025",
+      "date": "Application Deadline: 30 June 2025 | Exam Date: 17 September 2025",
+      "venue": "Physical/Contact Session",
+      "pdfUrl": "/examinations/Board exam Notice_2025_1.pdf",
+      "noticeType": "important",
+      "sections": [
+        {
+          "title": "Application Requirements",
+          "icon": "file-text",
+          "items": [
+            "Properly completed application form including the regulated Experience Matrix with supporting documents",
+            "Certified copies of accredited qualification/s with academic transcript/s (not older than 3 months)",
+            "Certified copy of ID or passport and valid work permit",
+            "Updated and detailed curriculum vitae (CV)",
+            "Letter from supervisor/mentor confirming all valuations were performed under their supervision",
+            "Practical Work school certificate (compulsory)"
+          ]
+        },
+        {
+          "title": "Important Notes",
+          "icon": "alert-circle",
+          "items": [
+            "Applications must be submitted by courier or hand delivery - email applications will NOT be accepted",
+            "Previous exam candidates who failed do not need to submit new applications",
+            "Candidates attending practical workschool for the first time in August 2025 will not be allowed to write the exam in September",
+            "The Board exam will be in a physical/contact session"
+          ]
+        },
+        {
+          "title": "Eligibility",
+          "icon": "check-circle",
+          "items": [
+            "Registered Candidate Valuers who completed their accredited Real Estate qualification",
+            "Registered Professional Associated who have been registered with the Council for more than 2 years",
+            "Registered Candidate Valuer registered for 2+ years with 4 years accredited degree can apply for Professional Valuers exam",
+            "Professional Associated Valuers applying for Professional Valuer exam need accredited four-year degree or diploma with additional qualifications"
+          ]
+        },
+        {
+          "title": "Examination Fees (VAT Inclusive)",
+          "icon": "dollar-sign",
+          "items": [
+            "Candidates writing Professional Associated Valuer (Pr Aval) examination: R3,700.00",
+            "Professional Associated Valuer writing the Professional Valuer examination: R4,000.00",
+            "Payment will be requested once your application has been approved",
+            "50% refundable until 14 days before Exam"
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "title": "MANAGER: REGISTRATIONS",
+          "name": "Ms MM Monyamane"
+        },
+        {
+          "title": "REGISTRAR",
+          "name": "Ms ND Naidoo"
+        }
+      ],
+      "noticeDate": "02 May 2025"
+    },
+    {
       "id": 2,
       "title": "Examination Schedule 2025-2026",
       "date": "2025-2026",
       "venue": "NG Kerk Stellastraat, 154 Stella Street, Waterkloof, Pretoria",
-      "pdfUrl": "/EXAMINATION INFO_ 2025_2026_2.pdf",
+      "pdfUrl": "/EXAMINATION INFO_2025_2026_2.pdf",
       "events": [
         {
           "eventType": "Pre-Exam Workshop",
