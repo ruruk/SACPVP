@@ -1,6 +1,19 @@
 [
   {
     "id": 1,
+    "title": "Executive Assistant to the Registrar",
+    "department": "SACPVP Administration",
+    "location": "Pretoria (Hybrid work model)",
+    "organization": "South African Council for the Property Valuers Profession (SACPVP)",
+    "closingDate": "2025-06-04",
+    "description": "We invite applications from exceptional administrative professionals for the position of Executive Assistant to the Registrar. This role provides strategic, high-level administrative and personal support that enables the Registrar to focus on governance, stakeholder relations, and advancing the Council's mandate.",
+    "requirements": "Submit a single PDF containing: A concise cover letter (no longer than one page), detailed CV with at least three contactable referees, and certified copies of qualifications and ID.",
+    "applicationEmail": "recruitment@bonituhcc.co.za",
+    "applicationSubject": "EA to Registrar – [Your Name]",
+    "linkedinUrl": "https://www.linkedin.com/posts/itumeleng-kgogome-56879368_vacancy-notice-executive-assistant-to-the-activity-7333128586884808706-sFAR/?utm_source=share&utm_medium=member_android&rcm=ACoAAA5ahGABU_FoT9IqQqUgxbC0kZjLtVTTWr0"
+  },
+  {
+    "id": 2,
     "title": "Deputy Director: Valuations",
     "department": "Group Finance - Property Branch",
     "location": "66 Jorissen Street, Jorissen Place, Braamfontein",
@@ -8,10 +21,10 @@
     "closingDate": "2025-04-15",
     "description": "Manage the Municipal valuations and Ad-hoc valuations to provide an efficient valuation service within the Directorate and to the clients of the City of Johannesburg.",
     "requirements": "B. Degree/NQF level 7 in Real Estate; Property Valuation or a qualification recognized by the SA Council for the Property Valuers' Profession",
-    "pdfUrl": "/Extension Notice on 032-2025_Various Positions- Group Finance - External.pdf"
+    "pdfUrl": "/job-posts/deputy-director-valuations.pdf"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Senior Manager: Valuation Services",
     "department": "Group Finance - Valuation Services",
     "location": "66 Jorissen Place, Braamfontein",
@@ -19,10 +32,10 @@
     "closingDate": "2025-04-15",
     "description": "Lead, direct, plan, develop and manage Property Valuations in the designated regions within the City of Johannesburg with regard to the compilation and maintenance of Valuation Rolls.",
     "requirements": "Degree/NQF level 7 in Real Estate: Property Valuation or a qualification recognised by the South African Council for the Property Valuers Profession (SACPVP)",
-    "pdfUrl": "/Extension Notice on 032-2025_Various Positions- Group Finance - External.pdf"
+    "pdfUrl": "/job-posts/senior-manager-valuation-services.pdf"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Valuer",
     "department": "Group Finance - Property Branch (Valuation Services)",
     "location": "66 Jorissen Place, Braamfontein",
@@ -30,6 +43,6 @@
     "closingDate": "2025-04-15",
     "description": "Undertake specific tasks associated with all aspects of property valuations, including property market research and the physical attributes of property as well as fieldwork.",
     "requirements": "National Diploma / NQF level 6 in Real Estate: Property Valuation or a qualification recognised by the South African Council for the Property Valuers Profession (SACPVP)",
-    "pdfUrl": "/Extension Notice on 032-2025_Various Positions- Group Finance - External.pdf"
+    "pdfUrl": "/job-posts/valuer.pdf"
   }
 ]

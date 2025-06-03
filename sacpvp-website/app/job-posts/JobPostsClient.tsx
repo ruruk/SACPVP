@@ -7,6 +7,8 @@ import {
   Building,
   Download,
   Clock,
+  Mail,
+  ExternalLink,
 } from "lucide-react";
 import jobPostsData from "@/data/job-posts.json";
 import styles from "./job-posts.module.css";
@@ -82,15 +84,46 @@ function JobCard({ job }: { job: any }) {
 
           <div className={styles.jobDescriptionContainer}>
             <p className={styles.jobDescription}>{job.description}</p>
+            <div className={styles.requirements}>
+              <strong>Requirements/Application:</strong>
+              <p>{job.requirements}</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div className={styles.jobCardFooter}>
-        <a href={job.pdfUrl} download className={styles.downloadButton}>
-          <Download size={18} />
-          <span>Download Job Description</span>
-        </a>
+        {job.pdfUrl ? (
+          <a href={job.pdfUrl} download className={styles.downloadButton}>
+            <Download size={18} />
+            <span>Download Job Description</span>
+          </a>
+        ) : job.applicationEmail ? (
+          <div className={styles.applicationButtons}>
+            <a
+              href={`mailto:${
+                job.applicationEmail
+              }?subject=${encodeURIComponent(
+                job.applicationSubject || job.title
+              )}`}
+              className={styles.applyButton}
+            >
+              <Mail size={18} />
+              <span>Apply via Email</span>
+            </a>
+            {job.linkedinUrl && (
+              <a
+                href={job.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.linkedinButton}
+              >
+                <ExternalLink size={18} />
+                <span>View on LinkedIn</span>
+              </a>
+            )}
+          </div>
+        ) : null}
       </div>
     </div>
   );
