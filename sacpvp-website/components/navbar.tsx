@@ -42,7 +42,7 @@ export default function Navbar() {
               <NavLink href="/examinations.html">Examinations</NavLink>
               <NavLink href="/job-posts.html">Job Posts</NavLink>
               <NavLink href="/registered-members.html">
-                Registered Members
+                Registered Persons
               </NavLink>
             </nav>
           </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
               href="/registered-members.html"
               onClick={() => setIsMenuOpen(false)}
             >
-              Registered Members
+              Registered Persons
             </NavLink>
           </nav>
         </div>

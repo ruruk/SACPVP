@@ -1,7 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Calendar, Bell, ChevronDown, ChevronUp, Download } from "lucide-react";
+import {
+  Calendar,
+  Bell,
+  ChevronDown,
+  ChevronUp,
+  Download,
+  ExternalLink,
+} from "lucide-react";
 import announcements from "@/data/announcements.json";
 import styles from "./announcements.module.css";
 
@@ -59,14 +66,29 @@ export default function AnnouncementsClient() {
                     <span className={styles.accordionDate}>
                       {new Date(announcement.date).toLocaleDateString()}
                     </span>
-                    <a
-                      href={announcement.pdfUrl}
-                      download
-                      className={styles.downloadLink}
-                    >
-                      <Download size={16} />
-                      <span>Download PDF</span>
-                    </a>
+                    <div className={styles.actionButtons}>
+                      {announcement.pdfUrl && (
+                        <a
+                          href={announcement.pdfUrl}
+                          download
+                          className={styles.downloadLink}
+                        >
+                          <Download size={16} />
+                          <span>Download PDF</span>
+                        </a>
+                      )}
+                      {announcement.webUrl && (
+                        <a
+                          href={announcement.webUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.visitLink}
+                        >
+                          <ExternalLink size={16} />
+                          <span>Visit Link</span>
+                        </a>
+                      )}
+                    </div>
                   </div>
                   <div className={styles.accordionText}>
                     {announcement.content

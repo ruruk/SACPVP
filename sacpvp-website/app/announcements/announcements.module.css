@@ -1,5 +1,5 @@
 .announcements {
-  padding: 8rem 2rem 4rem;
+  padding: 2rem 0;
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 80px;
@@ -9,9 +9,9 @@
 .title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--primary);
-  margin-bottom: 2rem;
   text-align: center;
+  margin-bottom: 3rem;
+  color: #1f2937;
 }
 
 .announcementsList {
@@ -22,50 +22,52 @@
 
 /* Accordion Styles */
 .accordionItem {
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e5e7eb;
   border-radius: 0.75rem;
   overflow: hidden;
-  background-color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.accordionItem:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .accordionHeader {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem 1.5rem;
-  background-color: white;
+  padding: 1.5rem;
+  background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: left;
   transition: background-color 0.2s ease;
 }
 
 .accordionHeader:hover {
-  background-color: #f8fafc;
+  background-color: #f9fafb;
 }
 
 .accordionHeaderContent {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   flex: 1;
 }
 
 .iconWrapper {
-  background-color: var(--primary);
-  border-radius: 0.5rem;
-  width: 48px;
-  height: 48px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #dbeafe;
+  color: #2563eb;
   flex-shrink: 0;
-}
-
-.iconWrapper svg {
-  color: white;
 }
 
 .headerText {
@@ -74,19 +76,20 @@
 
 .accordionTitle {
   font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
 }
 
 .accordionDescription {
-  font-size: 1rem;
-  color: #64748b;
+  font-size: 0.875rem;
+  color: #6b7280;
   margin: 0;
+  line-height: 1.4;
 }
 
 .accordionIcon {
-  color: var(--primary);
+  color: #6b7280;
   flex-shrink: 0;
 }
 
@@ -97,39 +100,71 @@
 }
 
 .accordionOpen {
-  max-height: 5000px; /* Arbitrary large value */
+  max-height: 1000px;
 }
 
 .accordionBody {
-  padding: 0 1.5rem 1.5rem;
-  border-top: 1px solid #e2e8f0;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid #f3f4f6;
 }
 
 .accordionMeta {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
-  padding-top: 1.25rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .accordionDate {
   font-size: 0.875rem;
-  color: #64748b;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.downloadLink,
+.visitLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .downloadLink {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--primary);
-  font-size: 0.875rem;
-  font-weight: 600;
-  transition: color 0.2s ease;
+  background-color: #3b82f6;
+  color: white;
 }
 
 .downloadLink:hover {
-  color: var(--secondary);
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.visitLink {
+  background-color: #10b981;
+  color: white;
+}
+
+.visitLink:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.accordionText {
+  color: #374151;
+  line-height: 1.6;
 }
 
 .accordionText p {
@@ -145,16 +180,45 @@
 
 .noAnnouncements {
   text-align: center;
-  font-size: 1.1rem;
-  color: #4a5568;
-  padding: 2rem 0;
+  color: #6b7280;
+  font-size: 1.125rem;
+  padding: 3rem;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
 }
 
 @media (max-width: 768px) {
-  .accordionHeaderContent {
+  .announcements {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .accordionHeader {
+    padding: 1rem;
+  }
+
+  .accordionBody {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .accordionMeta {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.75rem;
+  }
+
+  .actionButtons {
+    width: 100%;
+  }
+
+  .downloadLink,
+  .visitLink {
+    flex: 1;
+    justify-content: center;
   }
 }
 

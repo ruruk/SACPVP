@@ -10,6 +10,7 @@ import {
   ChevronDown,
   ChevronUp,
   Download,
+  ExternalLink,
 } from "lucide-react";
 import announcements from "@/data/announcements.json";
 import styles from "./announcements-section.module.css";
@@ -31,7 +32,7 @@ export default function AnnouncementsSection() {
       <div className="container">
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>Latest Announcements</h2>
-          <Link href="/announcements.html" className={styles.viewAllLink}>
+          <Link href="/announcements" className={styles.viewAllLink}>
             <span>View All</span>
             <ArrowRight size={16} />
           </Link>
@@ -82,14 +83,29 @@ export default function AnnouncementsSection() {
                       <span className={styles.accordionDate}>
                         {new Date(announcement.date).toLocaleDateString()}
                       </span>
-                      <a
-                        href={announcement.pdfUrl}
-                        download
-                        className={styles.downloadLink}
-                      >
-                        <Download size={16} />
-                        <span>Download PDF</span>
-                      </a>
+                      <div className={styles.actionButtons}>
+                        {announcement.pdfUrl && (
+                          <a
+                            href={announcement.pdfUrl}
+                            download
+                            className={styles.downloadLink}
+                          >
+                            <Download size={16} />
+                            <span>Download PDF</span>
+                          </a>
+                        )}
+                        {announcement.webUrl && (
+                          <a
+                            href={announcement.webUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.visitLink}
+                          >
+                            <ExternalLink size={16} />
+                            <span>Visit Link</span>
+                          </a>
+                        )}
+                      </div>
                     </div>
                     <div className={styles.accordionText}>
                       {announcement.content

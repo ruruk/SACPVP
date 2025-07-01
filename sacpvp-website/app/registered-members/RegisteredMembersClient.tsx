@@ -49,7 +49,7 @@ export default function RegisteredMembersClient() {
     <div className={styles.membersPage}>
       <div className="container">
         <div className={styles.searchSection}>
-          <h1 className={styles.title}>Registered Members</h1>
+          <h1 className={styles.title}>Registered Persons</h1>
           <p className={styles.description}>
             Search for registered property valuers by name
           </p>
