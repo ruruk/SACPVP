@@ -62,6 +62,17 @@ export default function AnnouncementsClient() {
                 }`}
               >
                 <div className={styles.accordionBody}>
+                  {/* Banner image for announcements that have bannerImage */}
+                  {announcement.bannerImage && (
+                    <div className={styles.bannerImageContainer}>
+                      <img
+                        src={announcement.bannerImage || "/placeholder.svg"}
+                        alt={`Banner for ${announcement.title}`}
+                        className={styles.bannerImage}
+                      />
+                    </div>
+                  )}
+
                   <div className={styles.accordionMeta}>
                     <span className={styles.accordionDate}>
                       {new Date(announcement.date).toLocaleDateString()}
