@@ -74,13 +74,6 @@ export default function Registration() {
             VALUATION" Please download the template, complete it, save as PDF or
             Word and then keep it ready to UPLOAD further on.
           </p>
-          <Link
-            href="/registrationTemplate.docx"
-            className={styles.downloadButton}
-          >
-            <Download size={16} />
-            Download Template
-          </Link>
         </div>
       </section>
 
