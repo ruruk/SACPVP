@@ -1,0 +1,325 @@
+.container {
+  min-height: calc(100vh - 450px);
+
+  padding: 2rem 0;
+  margin-top: 160px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ivscList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordionItem:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.pastItem {
+  opacity: 0.7;
+}
+
+.accordionHeader {
+  width: 100%;
+  padding: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.accordionHeader:hover {
+  background-color: #f8f9fa;
+}
+
+.accordionHeaderContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1;
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.headerText {
+  flex: 1;
+}
+
+.accordionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.accordionDescription {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.accordionIcon {
+  color: #666;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.webinarBadge {
+  background: #dc2626;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.partnerBadge {
+  background: #3b82f6;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pastBadge {
+  background: #6b7280;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordionOpen {
+  max-height: 2000px;
+}
+
+.accordionBody {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.bannerImageContainer {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.accordionMeta {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.accordionDate {
+  font-weight: 600;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.downloadLink,
+.visitLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.downloadLink {
+  background: #3b82f6;
+  color: white;
+}
+
+.downloadLink:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.visitLink {
+  background: #10b981;
+  color: white;
+}
+
+.visitLink:hover {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+.accordionText {
+  line-height: 1.6;
+  color: #374151;
+}
+
+.accordionText p {
+  margin-bottom: 1rem;
+}
+
+.accordionText p:last-child {
+  margin-bottom: 0;
+}
+
+.noIvsc {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.noIvsc h3 {
+  margin: 1rem 0;
+  color: #1a1a1a;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .accordionHeader {
+    padding: 1rem;
+  }
+
+  .accordionHeaderContent {
+    gap: 0.75rem;
+  }
+
+  .iconWrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordionTitle {
+    font-size: 1.1rem;
+  }
+
+  .accordionDescription {
+    font-size: 0.9rem;
+  }
+
+  .accordionBody {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .downloadLink,
+  .visitLink {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .metaRow {
+    font-size: 0.8rem;
+  }
+}
