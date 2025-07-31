@@ -32,9 +32,6 @@ export default function LegalClient() {
                   </p>
                   <div className={styles.documentMeta}>
                     <span className={styles.category}>{document.category}</span>
-                    <span className={styles.lastUpdated}>
-                      Last updated: {document.lastUpdated}
-                    </span>
                   </div>
                 </div>
                 <div className={styles.actionButton}>
