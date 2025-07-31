@@ -23,6 +23,7 @@ import {
 import styles from "./examinations.module.css";
 import examinationsData from "@/data/examinations.json";
 import type { JSX } from "react";
+import Header from "@/components/global/header";
 
 export default function ExaminationsClient() {
   const { upcomingExaminations, pastExaminations } = examinationsData;
@@ -60,190 +61,195 @@ export default function ExaminationsClient() {
   };
 
   return (
-    <div className={styles.examinationsPage}>
-      <div className="container">
-        <h1 className={styles.pageTitle}>Examinations</h1>
-
-        {/* Upcoming Examinations Section */}
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>
-            <Calendar className={styles.sectionIcon} />
-            Upcoming Examinations
-          </h2>
-
-          {upcomingExaminations.length > 0 ? (
-            upcomingExaminations.map((exam) => (
-              <div key={exam.id} className={styles.examinationCard}>
-                <h3 className={styles.examTitle}>{exam.title}</h3>
-                <div className={styles.eventInfo}>
-                  <div className={styles.eventInfoItem}>
-                    <MapPin className={styles.icon} />
-                    <span>{exam.venue}</span>
-                  </div>
-                  {exam.date && (
-                    <div className={styles.eventInfoItem}>
-                      <Calendar className={styles.icon} />
-                      <span>{exam.date}</span>
-                    </div>
-                  )}
-                </div>
-
-                {exam.pdfUrl && (
-                  <a
-                    href={exam.pdfUrl}
-                    download
-                    className={styles.downloadButton}
-                  >
-                    <Download size={20} />
-                    Download PDF
-                  </a>
-                )}
-
-                {exam.days && (
-                  <ExaminationDetails
-                    examination={exam}
-                    renderIcon={renderIcon}
-                  />
-                )}
-
-                {exam.events && (
-                  <div className={styles.eventsTable}>
-                    <div className={styles.tableHeader}>
-                      <div className={styles.tableHeaderCell}>
-                        <CalendarDays className={styles.tableIcon} />
-                        Event
-                      </div>
-                      <div className={styles.tableHeaderCell}>
-                        <Clock className={styles.tableIcon} />
-                        Registration Period
-                      </div>
-                      <div className={styles.tableHeaderCell}>
-                        <Calendar className={styles.tableIcon} />
-                        Event Date
-                      </div>
-                      <div className={styles.tableHeaderCell}>
-                        <DollarSign className={styles.tableIcon} />
-                        Payment Due Date
-                      </div>
-                    </div>
-                    {exam.events.map((event, index) => (
-                      <div key={index} className={styles.tableRow}>
-                        <div className={styles.tableCell}>
-                          {event.eventType}
-                        </div>
-                        <div className={styles.tableCell}>
-                          {event.registrationPeriod}
-                        </div>
-                        <div className={styles.tableCell}>
-                          {event.eventDate}
-                        </div>
-                        <div className={styles.tableCell}>
-                          {event.paymentDueDate}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {exam.noticeType === "important" && exam.sections && (
-                  <div className={styles.noticeContainer}>
-                    {exam.sections.map((section, index) => (
-                      <div key={index} className={styles.noticeSection}>
-                        <h4 className={styles.noticeSectionTitle}>
-                          {renderIcon(section.icon)}
-                          <span>{section.title}</span>
-                        </h4>
-                        <ul className={styles.noticeList}>
-                          {section.items.map((item, itemIndex) => (
-                            <li key={itemIndex} className={styles.noticeItem}>
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-
-                    {exam.contacts && (
-                      <div className={styles.contactsSection}>
-                        {exam.contacts.map((contact, index) => (
-                          <div key={index} className={styles.contactItem}>
-                            <strong>{contact.title}:</strong> {contact.name}
-                          </div>
-                        ))}
-                        <div className={styles.noticeDate}>
-                          <strong>Date:</strong> {exam.noticeDate}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-
-                <div className={styles.footer}>
-                  <p>Yours faithfully,</p>
-                  <p>ND Naidoo</p>
-                  <p>Registrar</p>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className={styles.noExaminations}>
-              <div className={styles.iconContainer}>
-                <AlertCircle className={styles.alertIcon} />
-              </div>
-              <p>There are currently no upcoming examinations scheduled.</p>
-              <p className={styles.checkBack}>
-                Please check back later for updates or contact the SACPVP office
-                for more information.
-              </p>
-            </div>
-          )}
-        </section>
-
-        {/* Past Examinations Section */}
-        {pastExaminations.length > 0 && (
+    <>
+      <Header
+        title="Examinations"
+        subtitle="View all past or upcomming events"
+        backgroundImage="/bannerImages/typing.jpeg"
+      />
+      <div className={styles.examinationsPage}>
+        <div className="container">
+          {/* Upcoming Examinations Section */}
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>
-              <History className={styles.sectionIcon} />
-              Past Examinations
+              <Calendar className={styles.sectionIcon} />
+              Upcoming Examinations
             </h2>
 
-            <div className={styles.accordionContainer}>
-              {pastExaminations.map((exam, index) => (
-                <div key={exam.id} className={styles.accordionItem}>
-                  <button
-                    className={styles.accordionHeader}
-                    onClick={() => toggleAccordion(index)}
-                    aria-expanded={openAccordion === index}
-                  >
-                    <div className={styles.accordionTitle}>
-                      <h3>{exam.title}</h3>
-                      <p className={styles.accordionDate}>{exam.date}</p>
+            {upcomingExaminations.length > 0 ? (
+              upcomingExaminations.map((exam) => (
+                <div key={exam.id} className={styles.examinationCard}>
+                  <h3 className={styles.examTitle}>{exam.title}</h3>
+                  <div className={styles.eventInfo}>
+                    <div className={styles.eventInfoItem}>
+                      <MapPin className={styles.icon} />
+                      <span>{exam.venue}</span>
                     </div>
-                    {openAccordion === index ? (
-                      <ChevronUp className={styles.accordionIcon} />
-                    ) : (
-                      <ChevronDown className={styles.accordionIcon} />
+                    {exam.date && (
+                      <div className={styles.eventInfoItem}>
+                        <Calendar className={styles.icon} />
+                        <span>{exam.date}</span>
+                      </div>
                     )}
-                  </button>
+                  </div>
 
-                  <div
-                    className={`${styles.accordionContent} ${
-                      openAccordion === index ? styles.accordionOpen : ""
-                    }`}
-                  >
+                  {exam.pdfUrl && (
+                    <a
+                      href={exam.pdfUrl}
+                      download
+                      className={styles.downloadButton}
+                    >
+                      <Download size={20} />
+                      Download PDF
+                    </a>
+                  )}
+
+                  {exam.days && (
                     <ExaminationDetails
                       examination={exam}
                       renderIcon={renderIcon}
-                      isPast={true}
                     />
+                  )}
+
+                  {exam.events && (
+                    <div className={styles.eventsTable}>
+                      <div className={styles.tableHeader}>
+                        <div className={styles.tableHeaderCell}>
+                          <CalendarDays className={styles.tableIcon} />
+                          Event
+                        </div>
+                        <div className={styles.tableHeaderCell}>
+                          <Clock className={styles.tableIcon} />
+                          Registration Period
+                        </div>
+                        <div className={styles.tableHeaderCell}>
+                          <Calendar className={styles.tableIcon} />
+                          Event Date
+                        </div>
+                        <div className={styles.tableHeaderCell}>
+                          <DollarSign className={styles.tableIcon} />
+                          Payment Due Date
+                        </div>
+                      </div>
+                      {exam.events.map((event, index) => (
+                        <div key={index} className={styles.tableRow}>
+                          <div className={styles.tableCell}>
+                            {event.eventType}
+                          </div>
+                          <div className={styles.tableCell}>
+                            {event.registrationPeriod}
+                          </div>
+                          <div className={styles.tableCell}>
+                            {event.eventDate}
+                          </div>
+                          <div className={styles.tableCell}>
+                            {event.paymentDueDate}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {exam.noticeType === "important" && exam.sections && (
+                    <div className={styles.noticeContainer}>
+                      {exam.sections.map((section, index) => (
+                        <div key={index} className={styles.noticeSection}>
+                          <h4 className={styles.noticeSectionTitle}>
+                            {renderIcon(section.icon)}
+                            <span>{section.title}</span>
+                          </h4>
+                          <ul className={styles.noticeList}>
+                            {section.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className={styles.noticeItem}>
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+
+                      {exam.contacts && (
+                        <div className={styles.contactsSection}>
+                          {exam.contacts.map((contact, index) => (
+                            <div key={index} className={styles.contactItem}>
+                              <strong>{contact.title}:</strong> {contact.name}
+                            </div>
+                          ))}
+                          <div className={styles.noticeDate}>
+                            <strong>Date:</strong> {exam.noticeDate}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  <div className={styles.footer}>
+                    <p>Yours faithfully,</p>
+                    <p>ND Naidoo</p>
+                    <p>Registrar</p>
                   </div>
                 </div>
-              ))}
-            </div>
+              ))
+            ) : (
+              <div className={styles.noExaminations}>
+                <div className={styles.iconContainer}>
+                  <AlertCircle className={styles.alertIcon} />
+                </div>
+                <p>There are currently no upcoming examinations scheduled.</p>
+                <p className={styles.checkBack}>
+                  Please check back later for updates or contact the SACPVP
+                  office for more information.
+                </p>
+              </div>
+            )}
           </section>
-        )}
+
+          {/* Past Examinations Section */}
+          {pastExaminations.length > 0 && (
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>
+                <History className={styles.sectionIcon} />
+                Past Examinations
+              </h2>
+
+              <div className={styles.accordionContainer}>
+                {pastExaminations.map((exam, index) => (
+                  <div key={exam.id} className={styles.accordionItem}>
+                    <button
+                      className={styles.accordionHeader}
+                      onClick={() => toggleAccordion(index)}
+                      aria-expanded={openAccordion === index}
+                    >
+                      <div className={styles.accordionTitle}>
+                        <h3>{exam.title}</h3>
+                        <p className={styles.accordionDate}>{exam.date}</p>
+                      </div>
+                      {openAccordion === index ? (
+                        <ChevronUp className={styles.accordionIcon} />
+                      ) : (
+                        <ChevronDown className={styles.accordionIcon} />
+                      )}
+                    </button>
+
+                    <div
+                      className={`${styles.accordionContent} ${
+                        openAccordion === index ? styles.accordionOpen : ""
+                      }`}
+                    >
+                      <ExaminationDetails
+                        examination={exam}
+                        renderIcon={renderIcon}
+                        isPast={true}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 
   function ExaminationDetails({

@@ -1,170 +1,181 @@
-.legal {
-  padding: 2rem 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 80px;
-  min-height: calc(100vh - 450px);
+.legalPage {
+  min-height: 100vh;
+  background-color: #f8fafc;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 3rem;
-  color: #1f2937;
+.content {
+  padding: 3rem 0;
 }
 
-.documentsList {
-  display: flex;
-  flex-direction: column;
+.documentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .documentCard {
-  border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
-  overflow: hidden;
   background: white;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
 }
 
 .documentCard:hover {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
 }
 
-.cardContent {
-  padding: 1.5rem;
+.cardHeader {
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.documentInfo {
+.iconWrapper {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0.75rem;
+  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.documentIcon {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.headerContent {
   flex: 1;
 }
 
 .documentTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1f2937;
-  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+  margin: 0 0 0.75rem 0;
   line-height: 1.4;
 }
 
-.documentDescription {
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin: 0 0 1rem 0;
-  line-height: 1.5;
-}
-
-.documentMeta {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.category {
-  display: inline-flex;
-  align-items: center;
+.categoryBadge {
+  display: inline-block;
   padding: 0.25rem 0.75rem;
-  background-color: #dbeafe;
-  color: #2563eb;
+  border-radius: 9999px;
+  color: white;
   font-size: 0.75rem;
   font-weight: 500;
-  border-radius: 9999px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
+.cardBody {
+  padding: 0 1.5rem 1rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.documentDescription {
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.documentMeta {
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
 .lastUpdated {
-  font-size: 0.75rem;
-  color: #9ca3af;
+  color: #64748b;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
-.actionButton {
-  flex-shrink: 0;
+.cardFooter {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  background-color: #f8fafc;
 }
 
-.downloadLink {
+.downloadButton {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #3b82f6;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  font-size: 0.9rem;
 }
 
-.downloadLink:hover {
-  background-color: #2563eb;
+.downloadButton:hover {
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
-.noDocuments {
-  text-align: center;
-  color: #6b7280;
-  font-size: 1.125rem;
-  padding: 3rem;
-  background-color: #f9fafb;
-  border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .legal {
+  .content {
+    padding: 2rem 0;
+  }
+
+  .documentsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cardHeader {
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+
+  .cardBody {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .cardFooter {
     padding: 1rem;
   }
+}
 
-  .title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+@media (max-width: 480px) {
+  .documentsGrid {
+    grid-template-columns: 1fr;
   }
 
-  .cardContent {
+  .cardHeader {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
 
-  .actionButton {
-    width: 100%;
+  .iconWrapper {
+    width: 48px;
+    height: 48px;
   }
 
-  .downloadLink {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .documentMeta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .legal {
-    padding: 8rem 3rem 4rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .legal {
-    padding: 8rem 4rem 4rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .legal {
-    padding: 8rem 6rem 4rem;
+  .documentIcon {
+    width: 20px;
+    height: 20px;
   }
 }

@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Executive Assistant to the Registrar",
+    "featured": "false",
     "department": "SACPVP Administration",
     "location": "Pretoria (Hybrid work model)",
     "organization": "South African Council for the Property Valuers Profession (SACPVP)",
@@ -15,6 +16,7 @@
   {
     "id": 2,
     "title": "Deputy Director: Valuations",
+    "featured": "false",
     "department": "Group Finance - Property Branch",
     "location": "66 Jorissen Street, Jorissen Place, Braamfontein",
     "organization": "City of Johannesburg",
@@ -26,6 +28,7 @@
   {
     "id": 3,
     "title": "Senior Manager: Valuation Services",
+    "featured": "false",
     "department": "Group Finance - Valuation Services",
     "location": "66 Jorissen Place, Braamfontein",
     "organization": "City of Johannesburg",
@@ -37,6 +40,7 @@
   {
     "id": 4,
     "title": "Valuer",
+    "featured": "false",
     "department": "Group Finance - Property Branch (Valuation Services)",
     "location": "66 Jorissen Place, Braamfontein",
     "organization": "City of Johannesburg",
@@ -48,6 +52,7 @@
   {
     "id": 5,
     "title": "Executive Assistant to the Registrar",
+    "featured": "false",
     "department": "Office of the Registrar",
     "location": "South Africa (Hybrid)",
     "organization": "BONITU HCC",
@@ -62,6 +67,8 @@
   {
     "id": 6,
     "title": "Manager: Valuations",
+    "featured": "true",
+    "companyLogo": "/job-posts/AlfredLogo.jpg",
     "department": "Budget and Treasury – Management Section",
     "location": "Alfred Duma Local Municipality, Ladysmith",
     "organization": "Alfred Duma Local Municipality",

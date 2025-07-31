@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import styles from "./ivsc.module.css";
 import ivscData from "@/data/ivsc.json";
+import Header from "@/components/global/header";
 
 interface IVSCItem {
   id: number;
@@ -63,16 +64,13 @@ export default function IVSCClient() {
 
   return (
     <div className={styles.container}>
-      <div className="container">
-        <h1 className={styles.title}>
-          IVSC (International Valuation Standards Council)
-        </h1>
-        <p className={styles.subtitle}>
-          Stay connected with the International Valuation Standards Council's
-          latest developments, webinars, and collaborative initiatives with
-          SACPVP.
-        </p>
+      <Header
+        title="IVSC Updates"
+        subtitle="International Valuation Standards Council resources and announcements"
+        backgroundImage="/bannerImages/houses.jpeg"
+      />
 
+      <div className="container">
         {upcomingItems.length > 0 && (
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>
@@ -117,9 +115,7 @@ export default function IVSCClient() {
                   </button>
 
                   <div
-                    className={`${styles.accordionContent} ${
-                      expandedItems.has(item.id) ? styles.accordionOpen : ""
-                    }`}
+                    className={`${styles.accordionContent} ${expandedItems.has(item.id) ? styles.accordionOpen : ""}`}
                   >
                     <div className={styles.accordionBody}>
                       {item.bannerImage && (
@@ -224,9 +220,7 @@ export default function IVSCClient() {
                   </button>
 
                   <div
-                    className={`${styles.accordionContent} ${
-                      expandedItems.has(item.id) ? styles.accordionOpen : ""
-                    }`}
+                    className={`${styles.accordionContent} ${expandedItems.has(item.id) ? styles.accordionOpen : ""}`}
                   >
                     <div className={styles.accordionBody}>
                       {item.bannerImage && (

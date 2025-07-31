@@ -20,90 +20,131 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
+
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
-      <div className={styles.topNav}>
-        <div className="container">
-          <h1 className={styles.companyName}>
-            South African Council for the Property Valuers Profession
-          </h1>
+    <>
+      <header
+        className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
+      >
+        <div className={styles.topNav}>
+          <div className="container">
+            <h1 className={styles.companyName}>
+              South African Council for the Property Valuers Profession
+            </h1>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.bottomNav}>
-        <div className={`container ${styles.navContainer}`}>
-          <div className={styles.logoContainer}>
-            <div className={styles.logo}></div>
+        <div className={styles.bottomNav}>
+          <div className={`container ${styles.navContainer}`}>
+            <div className={styles.logoContainer}>
+              <div className={styles.logo}></div>
 
-            <nav className={styles.desktopNav}>
-              <NavLink href="/">Home</NavLink>
-              <NavLink href="/announcements.html">Announcements</NavLink>
-              <NavLink href="/legal.html">Legal</NavLink>
-              <NavLink href="/ivsc.html">IVSC</NavLink>
-              <NavLink href="/registration.html">Registration</NavLink>
-              <NavLink href="/examinations.html">Examinations</NavLink>
-              <NavLink href="/job-posts.html">Job Posts</NavLink>
-              <NavLink href="/registered-members.html">
-                Registered Persons
-              </NavLink>
-            </nav>
+              <nav className={styles.desktopNav}>
+                <NavLink href="/">Home</NavLink>
+                <NavLink href="/announcements">Announcements</NavLink>
+                <NavLink href="/legal">Legal</NavLink>
+                <NavLink href="/ivsc">IVSC</NavLink>
+                <NavLink href="/registration">Registration</NavLink>
+                <NavLink href="/examinations">Examinations</NavLink>
+                <NavLink href="/job-posts">Job Posts</NavLink>
+                <NavLink href="/registered-members">Registered Persons</NavLink>
+              </nav>
+            </div>
+
+            <button
+              className={styles.mobileMenuButton}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Fullscreen Mobile Menu Overlay */}
+      <div
+        className={`${styles.mobileMenuOverlay} ${isMenuOpen ? styles.mobileMenuOpen : ""}`}
+      >
+        <div className={styles.mobileMenuContent}>
+          <div className={styles.mobileMenuHeader}>
+            <div className={styles.mobileMenuLogo}></div>
+            <h2 className={styles.mobileMenuTitle}>SACPVP</h2>
+            <button
+              className={styles.mobileMenuClose}
+              onClick={() => setIsMenuOpen(false)}
+              aria-label="Close mobile menu"
+            >
+              <X size={28} />
+            </button>
           </div>
 
-          <button
-            className={styles.mobileMenuButton}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
-
-      {isMenuOpen && (
-        <div className={styles.mobileNav}>
-          <nav className="container">
-            <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
+          <nav className={styles.mobileMenuNav}>
+            <NavLink href="/" onClick={() => setIsMenuOpen(false)} mobile>
               Home
             </NavLink>
             <NavLink
-              href="/announcements.html"
+              href="/announcements"
               onClick={() => setIsMenuOpen(false)}
+              mobile
             >
               Announcements
             </NavLink>
-            <NavLink href="/legal.html" onClick={() => setIsMenuOpen(false)}>
+            <NavLink href="/legal" onClick={() => setIsMenuOpen(false)} mobile>
               Legal
             </NavLink>
-            <NavLink href="/ivsc.html" onClick={() => setIsMenuOpen(false)}>
+            <NavLink href="/ivsc" onClick={() => setIsMenuOpen(false)} mobile>
               IVSC
             </NavLink>
             <NavLink
-              href="/registration.html"
+              href="/registration"
               onClick={() => setIsMenuOpen(false)}
+              mobile
             >
               Registration
             </NavLink>
             <NavLink
-              href="/examinations.html"
+              href="/examinations"
               onClick={() => setIsMenuOpen(false)}
+              mobile
             >
               Examinations
             </NavLink>
             <NavLink
-              href="/job-posts.html"
+              href="/job-posts"
               onClick={() => setIsMenuOpen(false)}
+              mobile
             >
               Job Posts
             </NavLink>
             <NavLink
-              href="/registered-members.html"
+              href="/registered-members"
               onClick={() => setIsMenuOpen(false)}
+              mobile
             >
               Registered Persons
             </NavLink>
           </nav>
+
+          <div className={styles.mobileMenuFooter}>
+            <p>South African Council for the Property Valuers Profession</p>
+          </div>
         </div>
-      )}
-    </header>
+      </div>
+    </>
   );
 }
 
@@ -111,13 +152,19 @@ function NavLink({
   href,
   children,
   onClick,
+  mobile = false,
 }: {
   href: string;
   children: React.ReactNode;
   onClick?: () => void;
+  mobile?: boolean;
 }) {
   return (
-    <Link href={href} className={styles.navLink} onClick={onClick}>
+    <Link
+      href={href}
+      className={mobile ? styles.mobileNavLink : styles.navLink}
+      onClick={onClick}
+    >
       {children}
     </Link>
   );

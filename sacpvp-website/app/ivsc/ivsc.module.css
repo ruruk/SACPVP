@@ -1,37 +1,35 @@
 .container {
-  min-height: calc(100vh - 450px);
-
-  padding: 2rem 0;
-  margin-top: 160px;
+  min-height: 100vh;
+  background: white;
 }
 
 .title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: bold;
   color: #1a1a1a;
-  text-align: center;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   color: #666;
-  text-align: center;
   margin-bottom: 3rem;
+  text-align: center;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .section {
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .sectionTitle {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.875rem;
+  font-weight: bold;
   color: #1a1a1a;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -45,14 +43,15 @@
 
 .accordionItem {
   background: white;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .accordionItem:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
 
@@ -66,15 +65,15 @@
   background: none;
   border: none;
   cursor: pointer;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: background-color 0.2s ease;
 }
 
 .accordionHeader:hover {
-  background-color: #f8f9fa;
+  background-color: #f9fafb;
 }
 
 .accordionHeaderContent {
@@ -101,28 +100,21 @@
 }
 
 .accordionTitle {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 0.5rem 0;
-  line-height: 1.4;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
 .accordionDescription {
-  font-size: 1rem;
-  color: #666;
+  font-size: 0.875rem;
+  color: #6b7280;
   margin: 0;
   line-height: 1.5;
-}
-
-.accordionIcon {
-  color: #666;
-  flex-shrink: 0;
-  margin-top: 0.5rem;
 }
 
 .webinarBadge {
@@ -136,7 +128,7 @@
 }
 
 .partnerBadge {
-  background: #3b82f6;
+  background: #2563eb;
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -152,6 +144,11 @@
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.accordionIcon {
+  color: #6b7280;
+  flex-shrink: 0;
 }
 
 .accordionContent {
@@ -179,29 +176,36 @@
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .accordionMeta {
   margin-bottom: 1.5rem;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 8px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .accordionDate {
-  font-weight: 600;
-  color: #1a1a1a;
-  display: block;
-  margin-bottom: 0.5rem;
+  display: inline-block;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .metaRow {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: #666;
-  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.metaRow svg {
+  flex-shrink: 0;
 }
 
 .actionButtons {
@@ -220,8 +224,8 @@
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.875rem;
   transition: all 0.2s ease;
-  font-size: 0.9rem;
 }
 
 .downloadLink {
@@ -245,8 +249,8 @@
 }
 
 .accordionText {
-  line-height: 1.6;
   color: #374151;
+  line-height: 1.6;
 }
 
 .accordionText p {
@@ -259,16 +263,28 @@
 
 .noIvsc {
   text-align: center;
-  padding: 3rem;
-  color: #666;
+  padding: 4rem 2rem;
+  color: #6b7280;
+}
+
+.noIvsc svg {
+  margin-bottom: 1rem;
+  color: #d1d5db;
 }
 
 .noIvsc h3 {
-  margin: 1rem 0;
-  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
 }
 
-/* Mobile Responsive */
+.noIvsc p {
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 1rem 0;
@@ -276,11 +292,22 @@
 
   .title {
     font-size: 2rem;
+    padding: 0 1rem;
   }
 
   .subtitle {
     font-size: 1rem;
     padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .ivscList {
+    margin: 0 1rem;
   }
 
   .accordionHeader {
@@ -297,11 +324,7 @@
   }
 
   .accordionTitle {
-    font-size: 1.1rem;
-  }
-
-  .accordionDescription {
-    font-size: 0.9rem;
+    font-size: 1.125rem;
   }
 
   .accordionBody {
@@ -310,7 +333,7 @@
 
   .actionButtons {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   .downloadLink,
@@ -319,7 +342,7 @@
     width: 100%;
   }
 
-  .metaRow {
-    font-size: 0.8rem;
+  .noIvsc {
+    padding: 3rem 1rem;
   }
 }

@@ -34,10 +34,10 @@ export default function Footer() {
             <h3 className={styles.sectionTitle}>Quick Links</h3>
             <ul className={styles.linkList}>
               <FooterLink href="/">Home</FooterLink>
-              <FooterLink href="/announcements.html">Announcements</FooterLink>
-              <FooterLink href="/registration.html">Registration</FooterLink>
-              <FooterLink href="/examinations.html">Examinations</FooterLink>
-              <FooterLink href="/legal.html">Legal</FooterLink>
+              <FooterLink href="/announcements">Announcements</FooterLink>
+              <FooterLink href="/registration">Registration</FooterLink>
+              <FooterLink href="/examinations">Examinations</FooterLink>
+              <FooterLink href="/legal">Legal</FooterLink>
             </ul>
           </div>
 
