@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "title": "Property Valuers Profession Act",
+    "description": "Legislation that establishes the regulatory framework for property valuers in South Africa.",
+    "pdfUrl": "/legal/Property Valuers Profession Act 47 of 2000.pdf",
+    "category": "Legislation",
+    "lastUpdated": ""
+  },
+  {
+    "id": "2",
+    "title": "Code of Conduct for Registered Persons",
+    "description": "Outlines the standards of professional behavior expected from registered property valuers.",
+    "pdfUrl": "/legal/SACPVP_Code_of_Conduct.pdf",
+    "category": "Professional Standards",
+    "lastUpdated": "2004-11-10"
+  },
+  {
+    "id": "3",
+    "title": "Rules for Property Valuers Profession",
+    "description": "General Notice 653 published on 13 December 2019 outlining rules for the profession.",
+    "pdfUrl": "/legal/Rules for Property Valuers Profession-GenN 653 13 December 2019.pdf",
+    "category": "Regulations",
+    "lastUpdated": "2019-12-13"
+  },
+  {
+    "id": "4",
+    "title": "Guidelines for Lodging a Complaint",
+    "description": "Step-by-step guidance for submitting formal complaints to the SACPVP.",
+    "pdfUrl": "/legal/GUIDELINES - SACPVP_LODGING_A_COMPLAINT_.pdf",
+    "category": "Complaints",
+    "lastUpdated": ""
+  },
+  {
+    "id": "5",
+    "title": "Complaint Form",
+    "description": "Official document to be used when lodging a complaint against a registered professional.",
+    "pdfUrl": "/legal/Form for Lodging a Complaint(new).doc",
+    "category": "Complaints",
+    "lastUpdated": ""
+  },
+  {
+    "id": "6",
+    "title": "Rules for Disciplinary Proceedings",
+    "description": "Procedures governing disciplinary actions and the handling of misconduct cases.",
+    "pdfUrl": "/legal/Rules for Disciplinary Proceedings.pdf",
+    "category": "Disciplinary",
+    "lastUpdated": ""
+  },
+  {
+    "id": "7",
+    "title": "Rules for the Procedure of Nomination",
+    "description": "Gazetted rules outlining how nominations are conducted within the Council structure.",
+    "pdfUrl": "/legal/Rules for the Procedure of Nomination (gazetted).pdf",
+    "category": "Governance",
+    "lastUpdated": ""
+  },
+  {
+    "id": "8",
+    "title": "Timeline for Disciplinary Process",
+    "description": "Visual or tabulated overview of the steps and timeframes in the disciplinary process.",
+    "pdfUrl": "/legal/Timeline Disciplinary Process.pdf",
+    "category": "Disciplinary",
+    "lastUpdated": ""
+  }
+]

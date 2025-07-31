@@ -17,16 +17,17 @@ export default function JobPostsClient() {
   const today = new Date();
   today.setHours(0, 0, 0, 0); // Set to start of day for accurate comparison
 
-  // Filter jobs based on closing date
-  const currentJobs = jobPostsData.filter((job) => {
+  const sortedJobs = [...jobPostsData].sort((a, b) => b.id - a.id); // Sort from highest to lowest ID
+
+  const currentJobs = sortedJobs.filter((job) => {
     const closingDate = new Date(job.closingDate);
-    closingDate.setHours(23, 59, 59, 999); // Set to end of day
+    closingDate.setHours(23, 59, 59, 999);
     return closingDate >= today;
   });
 
-  const pastJobs = jobPostsData.filter((job) => {
+  const pastJobs = sortedJobs.filter((job) => {
     const closingDate = new Date(job.closingDate);
-    closingDate.setHours(23, 59, 59, 999); // Set to end of day
+    closingDate.setHours(23, 59, 59, 999);
     return closingDate < today;
   });
 
@@ -140,14 +141,29 @@ function JobCard({ job, isPast = false }: { job: any; isPast?: boolean }) {
       </div>
 
       <div className={styles.jobCardFooter}>
+        {/* Show all documents */}
         {!isPast && (
           <>
-            {job.pdfUrl ? (
+            {job.pdfUrl && (
               <a href={job.pdfUrl} download className={styles.downloadButton}>
                 <Download size={18} />
                 <span>Download Job Description</span>
               </a>
-            ) : job.applicationEmail ? (
+            )}
+            {job.additionalDocuments &&
+              Array.isArray(job.additionalDocuments) &&
+              job.additionalDocuments.map((doc: any, index: number) => (
+                <a
+                  key={index}
+                  href={doc.url}
+                  download
+                  className={styles.downloadButton}
+                >
+                  <Download size={18} />
+                  <span>{doc.label}</span>
+                </a>
+              ))}
+            {job.applicationEmail && (
               <div className={styles.applicationButtons}>
                 <a
                   href={`mailto:${
@@ -172,19 +188,39 @@ function JobCard({ job, isPast = false }: { job: any; isPast?: boolean }) {
                   </a>
                 )}
               </div>
-            ) : null}
+            )}
           </>
         )}
-        {isPast && job.pdfUrl && (
-          <a
-            href={job.pdfUrl}
-            download
-            className={styles.downloadButton}
-            style={{ opacity: 0.6 }}
-          >
-            <Download size={18} />
-            <span>View Job Description</span>
-          </a>
+
+        {/* Past job view */}
+        {isPast && (
+          <>
+            {job.pdfUrl && (
+              <a
+                href={job.pdfUrl}
+                download
+                className={styles.downloadButton}
+                style={{ opacity: 0.6 }}
+              >
+                <Download size={18} />
+                <span>View Job Description</span>
+              </a>
+            )}
+            {job.additionalDocuments &&
+              Array.isArray(job.additionalDocuments) &&
+              job.additionalDocuments.map((doc: any, index: number) => (
+                <a
+                  key={index}
+                  href={doc.url}
+                  download
+                  className={styles.downloadButton}
+                  style={{ opacity: 0.6 }}
+                >
+                  <Download size={18} />
+                  <span>{doc.label}</span>
+                </a>
+              ))}
+          </>
         )}
       </div>
     </div>

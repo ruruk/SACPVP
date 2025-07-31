@@ -39,7 +39,9 @@
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .jobCard:hover {
@@ -176,6 +178,8 @@
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .downloadButton:hover {
@@ -202,6 +206,8 @@
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .applyButton:hover {
@@ -222,6 +228,8 @@
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .linkedinButton:hover {

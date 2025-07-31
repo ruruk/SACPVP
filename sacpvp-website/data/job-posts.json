@@ -58,5 +58,25 @@
     "applicationSubject": "Application: Executive Assistant to the Registrar",
     "pdfUrl": "/EXECUTIVE ASSISTANT TO THE REGISTRAR.pdf",
     "linkedinUrl": null
+  },
+  {
+    "id": 6,
+    "title": "Manager: Valuations",
+    "department": "Budget and Treasury – Management Section",
+    "location": "Alfred Duma Local Municipality, Ladysmith",
+    "organization": "Alfred Duma Local Municipality",
+    "closingDate": "2025-08-08",
+    "description": "Responsible for undertaking municipal valuations and managing valuation-related tasks including the compilation and maintenance of the General and Supplementary Valuations Roll. The Manager: Valuations will also provide market valuations, assist with appeals, and contribute to asset verification.",
+    "requirements": "- Matric\n- National Diploma (NQF Level 6) or Degree (NQF Level 7) in Property Valuation or equivalent\n- Registered as a Professional or Associated Valuer (unrestricted) with SACPVP\n- Minimum 5 years' experience in municipal valuations\n- Valid Code B/EB driver's license\n- Sound knowledge of the Municipal Property Rates Act\n- Ability to prioritize tasks, communicate clearly, and work independently\n- Familiarity with Batho Pele Principles",
+    "additionalDocuments": [
+      {
+        "label": "MBD 4 Declaration of Interest Form",
+        "url": "/job-posts/MBD 4.pdf"
+      },
+      {
+        "label": "Job Description (Notice No. 58/2025)",
+        "url": "/job-posts/EXTERNAL NOTICE NO 58 OF 2025 - MANAGER VALUATIONS.docx"
+      }
+    ]
   }
 ]
