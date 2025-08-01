@@ -34,7 +34,7 @@ export default function AnnouncementsClient() {
       <Header
         title="Announcements"
         subtitle="Stay updated with the latest news and announcements from SACPVP"
-        backgroundImage="/bannerImages/houses.jpeg"
+        backgroundImage="/bannerImages/houses1.jpg"
       />
 
       <div

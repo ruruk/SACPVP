@@ -23,16 +23,49 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: white;
   border-radius: 1rem;
   padding: 1.5rem 1.25rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .linkCard:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Color-specific backgrounds and borders */
+.examinations {
+  background-color: rgba(255, 202, 6, 0.1);
+}
+
+.examinations:hover {
+  border-color: #ffca06;
+}
+
+.announcements {
+  background-color: rgba(34, 31, 31, 0.05);
+}
+
+.announcements:hover {
+  border-color: #221f1f;
+}
+
+.registration {
+  background-color: rgba(238, 25, 58, 0.1);
+}
+
+.registration:hover {
+  border-color: #ee193a;
+}
+
+.jobPosts {
+  background-color: rgba(0, 137, 209, 0.1);
+}
+
+.jobPosts:hover {
+  border-color: #0089d1;
 }
 
 .iconWrapper {
@@ -41,32 +74,78 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--muted);
+  background-color: white;
   border-radius: 0.75rem;
   margin-bottom: 1.25rem;
   transition: all 0.3s ease;
 }
 
-.linkCard:hover .iconWrapper {
-  background-color: var(--primary);
+/* Color-specific icons */
+.examinations .icon {
+  color: #ffca06;
+}
+
+.announcements .icon {
+  color: #221f1f;
+}
+
+.registration .icon {
+  color: #ee193a;
+}
+
+.jobPosts .icon {
+  color: #0089d1;
 }
 
 .icon {
-  color: var(--primary);
   transition: all 0.3s ease;
   width: 24px;
   height: 24px;
+}
+
+/* Hover effects with matching colors */
+.examinations:hover .iconWrapper {
+  background-color: #ffca06;
+}
+
+.announcements:hover .iconWrapper {
+  background-color: #221f1f;
+}
+
+.registration:hover .iconWrapper {
+  background-color: #ee193a;
+}
+
+.jobPosts:hover .iconWrapper {
+  background-color: #0089d1;
 }
 
 .linkCard:hover .icon {
   color: white;
 }
 
+/* Color-specific title text */
+.examinations .cardTitle {
+  color: #ffca06;
+}
+
+.announcements .cardTitle {
+  color: #221f1f;
+}
+
+.registration .cardTitle {
+  color: #ee193a;
+}
+
+.jobPosts .cardTitle {
+  color: #0089d1;
+}
+
 .cardTitle {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--primary);
+  transition: all 0.3s ease;
 }
 
 .cardDescription {

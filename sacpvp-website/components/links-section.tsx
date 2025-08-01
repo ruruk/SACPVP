@@ -14,6 +14,7 @@ export default function LinksSection() {
             description="Information about upcoming examinations and past papers."
             icon={<BookOpen className={styles.icon} />}
             href="/examinations"
+            colorClass="examinations"
           />
 
           <LinkCard
@@ -21,6 +22,7 @@ export default function LinksSection() {
             description="Stay updated with the latest news and announcements."
             icon={<Bell className={styles.icon} />}
             href="/announcements"
+            colorClass="announcements"
           />
 
           <LinkCard
@@ -28,6 +30,7 @@ export default function LinksSection() {
             description="Information about registering as a property valuer."
             icon={<UserPlus className={styles.icon} />}
             href="/registration"
+            colorClass="registration"
           />
 
           <LinkCard
@@ -35,6 +38,7 @@ export default function LinksSection() {
             description="View available job opportunities in the property valuation profession."
             icon={<Briefcase className={styles.icon} />}
             href="/job-posts"
+            colorClass="jobPosts"
           />
         </div>
       </div>
@@ -47,14 +51,16 @@ function LinkCard({
   description,
   icon,
   href,
+  colorClass,
 }: {
   title: string;
   description: string;
   icon: React.ReactNode;
   href: string;
+  colorClass: string;
 }) {
   return (
-    <a href={href} className={styles.linkCard}>
+    <a href={href} className={`${styles.linkCard} ${styles[colorClass]}`}>
       <div className={styles.iconWrapper}>{icon}</div>
       <h3 className={styles.cardTitle}>{title}</h3>
       <p className={styles.cardDescription}>{description}</p>

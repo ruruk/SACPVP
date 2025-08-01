@@ -67,7 +67,7 @@ export default function IVSCClient() {
       <Header
         title="IVSC Updates"
         subtitle="International Valuation Standards Council resources and announcements"
-        backgroundImage="/bannerImages/houses.jpeg"
+        backgroundImage="/bannerImages/houses1.jpg"
       />
 
       <div className="container">

@@ -84,7 +84,7 @@
 
 @media (max-width: 480px) {
   .header {
-    height: 200px;
+    height: 350px;
   }
 
   .title {
@@ -93,5 +93,10 @@
 
   .subtitle {
     font-size: 1rem;
+  }
+
+  .content {
+    padding: 10px;
+    padding-top: 140px;
   }
 }

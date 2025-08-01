@@ -11,7 +11,7 @@ export default function Home() {
       <Header
         title="Welcome to SACPVP"
         subtitle="Regulating and advancing the property valuation profession in South Africa"
-        backgroundImage="/bannerImages/houses.jpeg"
+        backgroundImage="/bannerImages/houses1.jpg"
       />
       <LinksSection />
       <AnnouncementsSection />
