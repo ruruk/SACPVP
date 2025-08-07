@@ -135,7 +135,7 @@ export default function WomensDayClient() {
                 </div>
               </div>
               <a
-                href="/womens-day/womens-day-2025-presentation.pdf"
+                href="/WOMEN'S DAY_EMBRACING VULNERABILITY.pptx"
                 download
                 className={styles.downloadButton}
               >
