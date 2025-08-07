@@ -102,7 +102,7 @@ export default function WomensDayClient() {
   return (
     <div className={styles.container}>
       <Header
-        title="Women's Day 2025"
+        title="Women's Month 2025"
         subtitle="Embracing Vulnerability and Strength in Professional Growth"
         backgroundImage="/bannerImages/women.jpeg"
       />
@@ -117,7 +117,7 @@ export default function WomensDayClient() {
                   <FileText size={32} />
                 </div>
                 <div className={styles.downloadInfo}>
-                  <h3>Women's Day 2025 Presentation</h3>
+                  <h3>Women's Month 2025 Presentation</h3>
                   <p>
                     Download the complete presentation on embracing
                     vulnerability and professional growth
@@ -131,7 +131,7 @@ export default function WomensDayClient() {
                 </div>
                 <div className={styles.downloadDetail}>
                   <FileText size={16} />
-                  <span>PDF Format</span>
+                  <span>PPTX Format</span>
                 </div>
               </div>
               <a
@@ -153,7 +153,7 @@ export default function WomensDayClient() {
               </div>
               <h2>Celebrating Women's Strength Through Vulnerability</h2>
               <p>
-                This Women's Day 2025, we explore the powerful concept of
+                This Women's Month 2025, we explore the powerful concept of
                 vulnerability and how embracing it can lead to personal and
                 professional growth. Understanding vulnerability is not about
                 weakness—it's about courage, authenticity, and the strength to

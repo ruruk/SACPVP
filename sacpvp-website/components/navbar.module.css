@@ -21,6 +21,8 @@
   font-weight: 500;
   text-align: center;
   transition: all 0.3s ease;
+  padding: 0 1rem;
+  line-height: 1.4;
 }
 
 .bottomNav {
@@ -52,6 +54,7 @@
   background-repeat: no-repeat;
   margin-right: 1rem;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .logo span {
@@ -69,6 +72,7 @@
   cursor: pointer;
   color: var(--primary);
   transition: color 0.3s ease;
+  flex-shrink: 0;
 }
 
 .mobileMenuButton:hover {
@@ -166,6 +170,18 @@
   transform: translateX(0.5rem);
 }
 
+.mobileNavLink.womensMonth {
+  color: #ec4899;
+  background-color: rgba(236, 72, 153, 0.1);
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.mobileNavLink.womensMonth:hover {
+  background-color: rgba(236, 72, 153, 0.2);
+  border-color: #ec4899;
+  color: #be185d;
+}
+
 .mobileMenuFooter {
   margin-top: auto;
   padding-top: 2rem;
@@ -185,10 +201,20 @@
   color: #374151;
   font-weight: 500;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .navLink:hover {
   color: var(--primary);
+}
+
+.navLink.womensMonth {
+  color: #ec4899;
+  font-weight: 600;
+}
+
+.navLink.womensMonth:hover {
+  color: #be185d;
 }
 
 /* Scrolled state */
@@ -209,9 +235,35 @@
   width: 3rem;
 }
 
+/* Small screens - hide company name when very cramped */
+@media (max-width: 480px) {
+  .companyName {
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .scrolled .companyName {
+    font-size: 0.625rem;
+  }
+}
+
+/* Very small screens - minimal company name */
+@media (max-width: 360px) {
+  .companyName {
+    font-size: 0.625rem;
+    padding: 0 0.25rem;
+  }
+
+  .scrolled .companyName {
+    font-size: 0.5rem;
+  }
+}
+
+/* Tablet breakpoint */
 @media (min-width: 768px) {
   .companyName {
     font-size: 1rem;
+    padding: 0 2rem;
   }
 
   .scrolled .companyName {
@@ -220,7 +272,8 @@
 
   .desktopNav {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .mobileMenuButton {
@@ -233,5 +286,39 @@
 
   .navLink {
     padding: 0;
+    font-size: 0.875rem;
+  }
+}
+
+/* Medium desktop - more space for nav items */
+@media (min-width: 1024px) {
+  .desktopNav {
+    gap: 1.5rem;
+  }
+
+  .navLink {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large desktop - full spacing */
+@media (min-width: 1200px) {
+  .desktopNav {
+    gap: 2rem;
+  }
+
+  .navLink {
+    font-size: 1rem;
+  }
+}
+
+/* Extra wide screens */
+@media (min-width: 1400px) {
+  .companyName {
+    font-size: 1.125rem;
+  }
+
+  .scrolled .companyName {
+    font-size: 1rem;
   }
 }

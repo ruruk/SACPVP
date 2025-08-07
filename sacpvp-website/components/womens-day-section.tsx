@@ -13,7 +13,7 @@ export default function WomensDaySection() {
             <Heart className={styles.icon} />
           </div>
           <div className={styles.content}>
-            <h3 className={styles.title}>Women's Day 2025</h3>
+            <h3 className={styles.title}>Women's Month 2025</h3>
             <p className={styles.description}>
               Embracing vulnerability for professional growth and stronger
               relationships.

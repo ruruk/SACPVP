@@ -61,7 +61,9 @@ export default function Navbar() {
                 <NavLink href="/examinations">Examinations</NavLink>
                 <NavLink href="/job-posts">Job Posts</NavLink>
                 <NavLink href="/registered-members">Registered Persons</NavLink>
-                <NavLink href="/womens-day">Women's day</NavLink>
+                <NavLink href="/womens-day" className={styles.womensMonth}>
+                  Women's Month
+                </NavLink>
               </nav>
             </div>
 
@@ -142,8 +144,9 @@ export default function Navbar() {
               href="/womens-day"
               onClick={() => setIsMenuOpen(false)}
               mobile
+              className={styles.womensMonth}
             >
-              Women's Day
+              Women's Month
             </NavLink>
           </nav>
 
@@ -161,18 +164,20 @@ function NavLink({
   children,
   onClick,
   mobile = false,
+  className = "",
 }: {
   href: string;
   children: React.ReactNode;
   onClick?: () => void;
   mobile?: boolean;
+  className?: string;
 }) {
+  const linkClass = mobile
+    ? `${styles.mobileNavLink} ${className}`
+    : `${styles.navLink} ${className}`;
+
   return (
-    <Link
-      href={href}
-      className={mobile ? styles.mobileNavLink : styles.navLink}
-      onClick={onClick}
-    >
+    <Link href={href} className={linkClass} onClick={onClick}>
       {children}
     </Link>
   );
