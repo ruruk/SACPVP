@@ -61,6 +61,7 @@ export default function Navbar() {
                 <NavLink href="/examinations">Examinations</NavLink>
                 <NavLink href="/job-posts">Job Posts</NavLink>
                 <NavLink href="/registered-members">Registered Persons</NavLink>
+                <NavLink href="/womens-day">Women's day</NavLink>
               </nav>
             </div>
 
@@ -136,6 +137,13 @@ export default function Navbar() {
               mobile
             >
               Registered Persons
+            </NavLink>
+            <NavLink
+              href="/womens-day"
+              onClick={() => setIsMenuOpen(false)}
+              mobile
+            >
+              Women's Day
             </NavLink>
           </nav>
 

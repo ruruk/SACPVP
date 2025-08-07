@@ -74,5 +74,25 @@
       "label": "View on job posts",
       "url": "/job-posts/"
     }
+  },
+  {
+    "id": 8,
+    "title": "2025 Practical Work-School Programme",
+    "shortDescription": "Full 5-day schedule for the 2025 Practical Work-School hosted at Kopanong Hotel & Conference Centre, Benoni.",
+    "date": "2025-07-24",
+    "icon": "briefcase",
+    "important": "false",
+    "content": "The official 5-day programme for the 2025 Practical Work-School outlines the detailed schedule, sessions, and speakers.\n\nTaking place from 25–29 August 2025 at the Kopanong Hotel & Conference Centre, Benoni, the event includes a wide range of topics such as:\n\n- International Valuation Standards (IVS)\n- Time Value of Money (TVM)\n- Discounted Cash Flow (DCF) and Capital Budgeting\n- Statutory Valuations\n- Municipal Property Rates Act (MPRA)\n- Valuation of Petrol Filling Stations\n- Understanding the South African Property Market\n- The Role of AI in Valuation\n\nNotable presenters include President John Cloete, Maarten van Doesburgh, Prof. Francois Viruly, Sean Godoy, and several Councillors and experts.\n\nThe programme also features practical sessions, group assignments, assessments, and a site visit to a commercial valuation site.",
+    "pdfUrl": "/announcements/SACPVP 2025 PWS_ PROGRAMME.docx"
+  },
+  {
+    "id": 9,
+    "title": "Announcement of New SACPVP Council Members",
+    "shortDescription": "Two new members appointed to the 6th Council of the SACPVP following recent resignations.",
+    "date": "2025-07-24",
+    "icon": "briefcase",
+    "important": "false",
+    "content": "Following the resignation of two members from the 6th Council of the South African Council for the Property Valuers Profession (SACPVP), the Honourable Minister Mr. D Macpherson has appointed two new Council members.\n\nThese appointments are effective immediately and will remain in place until September 2026.\n\nThe updated 6th Council now includes:\n- Mr. John Frederick Cloete (President)\n- Ms. Tiny Dlamini (Vice President)\n- Ms. Mankuroane Matseba\n- Mr. Manyane Chidi\n- Ms. Rehab Letsaba\n- Ms. Hendrina Viljoen\n- Mr. Gregory Cowden\n- Mr. Rakesh Ramlugaan\n- Mr. JF du Toit (Saul)\n- Mr. MPL Mthuli (Malusi)\n\nThe announcement also includes the appointment of new administrative staff to strengthen Council operations.",
+    "pdfUrl": "/announcements/ANNOUNCEMENT_NEW CLLRS_SACPVP BOARD.pdf"
   }
 ]

@@ -4,6 +4,7 @@ import AboutSection from "@/components/about-section";
 import ConstructionNotice from "@/components/construction-notice";
 import MemberSearchWidget from "@/components/member-search-widget";
 import Header from "@/components/global/header";
+import WomensDaySection from "@/components/womens-day-section";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       />
       <LinksSection />
       <AnnouncementsSection />
+      <WomensDaySection />
       <MemberSearchWidget />
       <AboutSection />
       <ConstructionNotice />

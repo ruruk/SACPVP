@@ -1,0 +1,491 @@
+.container {
+  background-color: #fdf2f8;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 2rem 0;
+}
+
+.downloadSection {
+  margin-bottom: 3rem;
+}
+
+.downloadCard {
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(190, 24, 93, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.downloadCard::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.downloadHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.downloadIcon {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.downloadInfo h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.downloadInfo p {
+  opacity: 0.9;
+  margin: 0;
+}
+
+.downloadMeta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.downloadDetail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.9;
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.downloadButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.introSection {
+  margin-bottom: 3rem;
+}
+
+.introCard {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  border: 2px solid #f9a8d4;
+  text-align: center;
+  position: relative;
+}
+
+.introIcon {
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 8px 25px rgba(190, 24, 93, 0.3);
+}
+
+.introCard h2 {
+  color: #be185d;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.introCard p {
+  color: #831843;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sectionIcon {
+  color: #be185d;
+}
+
+.sectionTitle {
+  color: #be185d;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sectionIntro {
+  color: #831843;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.triggersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.triggerCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid #f9a8d4;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.triggerCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(190, 24, 93, 0.15);
+  border-color: #ec4899;
+}
+
+.triggerNumber {
+  position: absolute;
+  top: -12px;
+  left: 1.5rem;
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 12px rgba(190, 24, 93, 0.3);
+}
+
+.triggerCard h3 {
+  color: #be185d;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.triggerCard p {
+  color: #831843;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefitCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid #f9a8d4;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(190, 24, 93, 0.15);
+  border-color: #ec4899;
+}
+
+.benefitIcon {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  color: #be185d;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 12px rgba(190, 24, 93, 0.2);
+}
+
+.benefitCard h3 {
+  color: #be185d;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.benefitCard p {
+  color: #831843;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.examplesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.exampleCard {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f9a8d4;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.exampleCard:hover {
+  border-color: #ec4899;
+  box-shadow: 0 4px 12px rgba(190, 24, 93, 0.1);
+  transform: translateX(4px);
+}
+
+.checkIcon {
+  color: #be185d;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.exampleCard p {
+  color: #831843;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.physicalCard {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #f9a8d4;
+}
+
+.physicalHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.physicalIcon {
+  color: #be185d;
+}
+
+.physicalCard h2 {
+  color: #be185d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.physicalCard p {
+  color: #831843;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.physicalCard p:last-child {
+  margin-bottom: 0;
+}
+
+.emphasis {
+  font-style: italic;
+  font-weight: 600;
+  color: #be185d !important;
+}
+
+.protectionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.protectionCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid #f9a8d4;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.protectionCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(190, 24, 93, 0.12);
+  border-color: #ec4899;
+}
+
+.protectionIcon {
+  color: #be185d;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.protectionCard p {
+  color: #831843;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ctaSection {
+  margin-top: 3rem;
+}
+
+.ctaCard {
+  background: linear-gradient(135deg, #be185d 0%, #831843 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaCard::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.ctaIcon {
+  background: rgba(255, 255, 255, 0.2);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.ctaCard h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.ctaCard p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.ctaCard p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem 0;
+  }
+
+  .downloadCard {
+    padding: 1.5rem;
+  }
+
+  .downloadHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .downloadMeta {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .introCard {
+    padding: 1.5rem;
+  }
+
+  .introCard h2 {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .triggersGrid,
+  .benefitsGrid,
+  .examplesGrid,
+  .protectionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCard {
+    padding: 2rem;
+  }
+
+  .ctaCard h2 {
+    font-size: 1.5rem;
+  }
+}
