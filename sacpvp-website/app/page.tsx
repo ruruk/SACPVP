@@ -16,7 +16,7 @@ export default function Home() {
       />
       <LinksSection />
       <AnnouncementsSection />
-      <WomensDaySection />
+      {/* <WomensDaySection /> */}
       <MemberSearchWidget />
       <AboutSection />
       <ConstructionNotice />

@@ -5,7 +5,16 @@
       "title": "Board Examination Notice - September 2025",
       "date": "Application Deadline: 30 June 2025 | Exam Date: 25 September 2025",
       "venue": "Physical/Contact Session",
-      "pdfUrl": "/examinations/BOARD EXAM NOTICE_SEPTEMBER 2025.pdf",
+      "pdfUrls": [
+        {
+          "title": "BOARD EXAM NOTICE",
+          "url": "/examinations/BOARD EXAM NOTICE_SEPTEMBER 2025.pdf"
+        },
+        {
+          "title": "Examination Form",
+          "url": "/announcements/Exam Venue Form - 25 SEPTEMBER 2025.pdf"
+        }
+      ],
       "noticeType": "important",
       "sections": [
         {

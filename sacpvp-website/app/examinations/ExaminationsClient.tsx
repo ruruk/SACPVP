@@ -104,6 +104,23 @@ export default function ExaminationsClient() {
                     </a>
                   )}
 
+                  {exam.pdfUrls && exam.pdfUrls.length > 0 && (
+                    <div className={styles.pdfLinks}>
+                      {exam.pdfUrls.map((pdf: any, index: number) => (
+                        <a
+                          key={index}
+                          href={pdf.url}
+                          download
+                          className={styles.downloadButton}
+                          style={{ marginLeft: "10px" }}
+                        >
+                          <Download size={20} />
+                          {pdf.title}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+
                   {exam.days && (
                     <ExaminationDetails
                       examination={exam}

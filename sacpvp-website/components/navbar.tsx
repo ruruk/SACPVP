@@ -61,9 +61,9 @@ export default function Navbar() {
                 <NavLink href="/examinations">Examinations</NavLink>
                 <NavLink href="/job-posts">Job Posts</NavLink>
                 <NavLink href="/registered-members">Registered Persons</NavLink>
-                <NavLink href="/womens-day" className={styles.womensMonth}>
+                {/* <NavLink href="/womens-day" className={styles.womensMonth}>
                   Women's Month
-                </NavLink>
+                </NavLink> */}
               </nav>
             </div>
 
@@ -140,14 +140,14 @@ export default function Navbar() {
             >
               Registered Persons
             </NavLink>
-            <NavLink
+            {/* <NavLink
               href="/womens-day"
               onClick={() => setIsMenuOpen(false)}
               mobile
               className={styles.womensMonth}
             >
               Women's Month
-            </NavLink>
+            </NavLink> */}
           </nav>
 
           <div className={styles.mobileMenuFooter}>
