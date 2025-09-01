@@ -91,7 +91,7 @@
     "shortDescription": "The September Board Exam has been rescheduled to 25 September 2025. Applicable only to registered persons who applied.",
     "date": "2025-08-15",
     "icon": "calendar",
-    "important": "true",
+    "important": "false",
     "content": "To All Registered Ca Val & Pr Aval\n\nThe September Board examination has been re-scheduled to 25th September 2025 due to several requests from Registered Persons attending the V20 Summit and Conference, 2 days prior in Cape Town. (i.e. on the 15th and 16th).\n\nThe assessment of the applications to write the Board examination will be completed before the end of next week and the outcomes will be communicated thereafter.\n\nWe would like to apologise for the delay of releasing the outcome of your application to write the Board Exam.\n\nPlease note: This message is meant only for the Registered persons who have applied to write the Board Exam on 25 September 2025."
   },
   {
@@ -103,5 +103,15 @@
     "important": "true",
     "content": "Venue: Kopanong Hotel & Conference Centre, Benoni\n\nDAY 1 — Mon 25 Aug\n07:45 Registration & Refreshments — SACPVP Admin\n08:30 Official Opening — President John Cloete\n08:45 Overview of International Valuation Standards (IVS) — John Cloete\n10:15 Role of Regulatory Body; Professionalism & Exam Rules — Registrar\n10:45 Legislative Framework; Code of Conduct & Ethics — Gabriel Mashishi\n11:30–15:45 Financial & academic valuation concepts; Time Value of Money (TVM) — Maarten van Doesburgh (with lunch & breaks)\n17:00 End of Day One\n\nDAY 2 — Tue 26 Aug\n07:45 Registration — Admin\n08:30 Discounted Cash Flow (DCF) & Capital Budgeting — Maarten van Doesburgh\n09:30 TVM Revision — All Delegates\n10:30 TVM Test — All Delegates\n12:00 Valuation of Petrol Filling Stations (Practical) — Dr Nosipho Moloi\n14:15 Statutory Valuations — Cllr Tiny Dlamini\n15:30 Practical Session & Presentations — SAIV, BPVA & Mentors; Demos on value attributes, floor area measurement, town planning, building components; Registration briefing — Admin\n18:30 End of Day Two\n\nDAY 3 — Wed 27 Aug\n07:45 Registration — Admin\n08:30 The Role of the Valuer in the Economy — Patrick O’Connell\n10:00 MPRA & Municipal Rating; Standards Development + Q&A — Cllr Rakesh Ramlugaan & Dr Janet Channing\n11:30 Meeting with Team Leaders — Registered Valuers\n13:00 Site Visit: Practical Valuation — Isando Industrial Park, Gauteng\n17:00 End of Day Three\n\nDAY 4 — Thu 28 Aug\n07:45 Registration — Admin\n08:30 Investment Analysis — Marno Booyens\n11:00 The Role of AI in Revolutionising Valuations — Sean Godoy\n14:00 Practical Valuation Discussion: Commercial/Industrial Property — President John Cloete & Cllr M. Chidi\n15:45 Group Assignment: Instruction & Discussion — President John Cloete\n17:00 End of Day Four\n\nDAY 5 — Fri 29 Aug\n07:45 Registration — Admin\n08:30 Recap & Revision — Presenters\n10:00 Final Test (90 minutes) — All Attendees\n11:45 Certificates, Photographs & Closure — President, Vice President, Councillors & Admin\nLunch & Departure",
     "pdfUrl": "/announcements/SACPVP 2025 PWS_ PROGRAMME_Final_NEW.pdf"
+  },
+  {
+    "id": 12,
+    "title": "Board Examination Venue Form – 25 September 2025",
+    "shortDescription": "Details and requirements for the SACPVP Board Examination taking place on 25 September 2025, including fees, venues, and submission deadlines.",
+    "date": "2025-09-25",
+    "icon": "calendar",
+    "important": "true",
+    "content": "The South African Council for the Property Valuers Profession (SACPVP) will host the Board Examination on 25 September 2025. All delegates intending to write must complete and return the Board Examination Venue Form with proof of payment to admin@sacpvp.co.za before 25 September 2025. Payment of the examination fees is mandatory before candidates will be allowed to write.\n\nExamination Fees:\n- Professional Associated Valuer (Pr AVal): R3 700.00\n- Single Residential Property Assessor (SRPA): R3 700.00\n- Professional Valuer (Pr Val): R4 000.00\n\nAvailable Venues:\n- Cape Town\n- Durban\n- Port Elizabeth\n- Pretoria\n\nBanking Details:\n- Bank: ABSA Bank\n- Account No: 21 4028 5741\n- Account Type: Cheque account\n- Branch: Menlyn, 335 645\n\nPlease use your surname and registration number as reference when making payment.",
+    "pdfUrl": "/announcements/Exam Venue Form - 25 SEPTEMBER 2025.pdf"
   }
 ]
