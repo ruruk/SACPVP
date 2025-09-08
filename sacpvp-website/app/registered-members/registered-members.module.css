@@ -29,6 +29,12 @@
 .searchContainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .searchBox {
@@ -77,6 +83,63 @@
 }
 
 .clearButton:hover {
+  color: #64748b;
+}
+
+/* Filter Box Styles */
+.filterBox {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.filterBox:focus-within {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary);
+}
+
+.filterIcon {
+  color: #94a3b8;
+  margin-right: 0.75rem;
+}
+
+.provinceSelect {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #334155;
+  background: transparent;
+  cursor: pointer;
+}
+
+.provinceSelect option {
+  color: #334155;
+  background-color: white;
+}
+
+.clearFilterButton {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.clearFilterButton:hover {
   color: #64748b;
 }
 

@@ -10,8 +10,13 @@ import {
   AlertCircle,
   MapPin,
   Loader2,
+  Filter,
 } from "lucide-react";
-import { fetchMembersFromCSV, MemberWithProvince } from "@/lib/csv-parser";
+import {
+  fetchMembersFromCSV,
+  MemberWithProvince,
+  PROVINCE_MAPPING,
+} from "@/lib/csv-parser";
 import styles from "./registered-members.module.css";
 
 export default function RegisteredMembersClient() {
@@ -23,6 +28,7 @@ export default function RegisteredMembersClient() {
     []
   );
   const [allMembers, setAllMembers] = useState<MemberWithProvince[]>([]);
+  const [selectedProvince, setSelectedProvince] = useState<string>("");
   const [isSearching, setIsSearching] = useState(!!initialSearchTerm);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -46,22 +52,29 @@ export default function RegisteredMembersClient() {
     loadMembers();
   }, []);
 
-  // Search functionality
+  // Search and filter functionality
   useEffect(() => {
-    if (searchTerm.trim() === "") {
-      setFilteredMembers([]);
-      setIsSearching(false);
-      return;
+    let results = allMembers;
+
+    // Apply province filter
+    if (selectedProvince) {
+      results = results.filter(
+        (member) => member.province === selectedProvince
+      );
     }
 
-    setIsSearching(true);
-    const results = allMembers.filter(
-      (member) =>
-        member.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        member.surname.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    // Apply search filter
+    if (searchTerm.trim() !== "") {
+      results = results.filter(
+        (member) =>
+          member.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          member.surname.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
     setFilteredMembers(results);
-  }, [searchTerm, allMembers]);
+    setIsSearching(searchTerm.trim() !== "" || selectedProvince !== "");
+  }, [searchTerm, selectedProvince, allMembers]);
 
   const getStatusColor = (regtype: string) => {
     switch (regtype) {
@@ -84,7 +97,7 @@ export default function RegisteredMembersClient() {
         <div className={styles.searchSection}>
           <h1 className={styles.title}>Registered Persons</h1>
           <p className={styles.description}>
-            Search for registered property valuers by name
+            Search for registered property valuers by name or filter by province
           </p>
 
           <div className={styles.searchContainer}>
@@ -101,6 +114,33 @@ export default function RegisteredMembersClient() {
                 <button
                   className={styles.clearButton}
                   onClick={() => setSearchTerm("")}
+                >
+                  ×
+                </button>
+              )}
+            </div>
+          </div>
+
+          <div className={styles.filterContainer}>
+            <div className={styles.filterBox}>
+              <Filter className={styles.filterIcon} />
+              <select
+                value={selectedProvince}
+                onChange={(e) => setSelectedProvince(e.target.value)}
+                className={styles.provinceSelect}
+              >
+                <option value="">All Provinces</option>
+                {Object.values(PROVINCE_MAPPING).map((province) => (
+                  <option key={province} value={province}>
+                    {province}
+                  </option>
+                ))}
+              </select>
+              {selectedProvince && (
+                <button
+                  className={styles.clearFilterButton}
+                  onClick={() => setSelectedProvince("")}
+                  title="Clear filter"
                 >
                   ×
                 </button>
@@ -182,7 +222,10 @@ export default function RegisteredMembersClient() {
           {!isLoading && !error && !isSearching && (
             <div className={styles.searchPrompt}>
               <Search size={48} className={styles.promptIcon} />
-              <p>Enter a name to search for members</p>
+              <p>
+                Enter a name to search for members or select a province to
+                filter
+              </p>
             </div>
           )}
         </div>
