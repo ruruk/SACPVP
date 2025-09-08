@@ -2,8 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { Search, User, CheckCircle, XCircle, AlertCircle } from "lucide-react";
-import membersData from "@/data/members.json";
+import {
+  Search,
+  User,
+  CheckCircle,
+  XCircle,
+  AlertCircle,
+  MapPin,
+  Loader2,
+} from "lucide-react";
+import { fetchMembersFromCSV, MemberWithProvince } from "@/lib/csv-parser";
 import styles from "./registered-members.module.css";
 
 export default function RegisteredMembersClient() {
@@ -11,9 +19,34 @@ export default function RegisteredMembersClient() {
   const initialSearchTerm = searchParams.get("search") || "";
 
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
-  const [filteredMembers, setFilteredMembers] = useState([]);
+  const [filteredMembers, setFilteredMembers] = useState<MemberWithProvince[]>(
+    []
+  );
+  const [allMembers, setAllMembers] = useState<MemberWithProvince[]>([]);
   const [isSearching, setIsSearching] = useState(!!initialSearchTerm);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
+  // Load CSV data on component mount
+  useEffect(() => {
+    const loadMembers = async () => {
+      try {
+        setIsLoading(true);
+        setError(null);
+        const members = await fetchMembersFromCSV();
+        setAllMembers(members);
+      } catch (err) {
+        setError("Failed to load member data. Please try again later.");
+        console.error("Error loading members:", err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadMembers();
+  }, []);
+
+  // Search functionality
   useEffect(() => {
     if (searchTerm.trim() === "") {
       setFilteredMembers([]);
@@ -22,15 +55,15 @@ export default function RegisteredMembersClient() {
     }
 
     setIsSearching(true);
-    const results = membersData.filter(
+    const results = allMembers.filter(
       (member) =>
-        member.firstname.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        member.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
         member.surname.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredMembers(results);
-  }, [searchTerm]);
+  }, [searchTerm, allMembers]);
 
-  const getStatusColor = (regtype) => {
+  const getStatusColor = (regtype: string) => {
     switch (regtype) {
       case "Prof Valuer":
         return styles.statusProfessional;
@@ -77,7 +110,23 @@ export default function RegisteredMembersClient() {
         </div>
 
         <div className={styles.resultsSection}>
-          {isSearching && (
+          {isLoading && (
+            <div className={styles.loadingState}>
+              <Loader2 size={48} className={styles.loadingIcon} />
+              <h2>Loading member data...</h2>
+              <p>Please wait while we load the member database</p>
+            </div>
+          )}
+
+          {error && (
+            <div className={styles.errorState}>
+              <AlertCircle size={48} className={styles.errorIcon} />
+              <h2>Error loading data</h2>
+              <p>{error}</p>
+            </div>
+          )}
+
+          {!isLoading && !error && isSearching && (
             <>
               {filteredMembers.length > 0 ? (
                 <>
@@ -85,49 +134,35 @@ export default function RegisteredMembersClient() {
                     Search Results ({filteredMembers.length})
                   </h2>
                   <div className={styles.membersList}>
-                    {filteredMembers.map((member) => (
-                      <div key={member.id} className={styles.memberCard}>
+                    {filteredMembers.map((member, index) => (
+                      <div
+                        key={`${member.surname}-${member.firstName}-${member.province}-${index}`}
+                        className={styles.memberCard}
+                      >
                         <div className={styles.memberHeader}>
                           <div className={styles.avatarContainer}>
                             <User size={24} className={styles.avatarIcon} />
                           </div>
                           <div className={styles.memberInfo}>
                             <h3 className={styles.memberName}>
-                              {member.firstname} {member.surname}
+                              {member.firstName} {member.surname}
                             </h3>
                             <div
                               className={`${
                                 styles.memberStatus
-                              } ${getStatusColor(member.regtype)}`}
+                              } ${getStatusColor(member.regType)}`}
                             >
                               <CheckCircle size={14} />
-                              <span>{member.regtype}</span>
+                              <span>{member.regType}</span>
                             </div>
                           </div>
                         </div>
                         <div className={styles.memberDetails}>
                           <div className={styles.detailItem}>
-                            {member.active === "Active" ? (
-                              <>
-                                <CheckCircle
-                                  size={16}
-                                  className={`${styles.detailIcon} ${styles.activeIcon}`}
-                                />
-                                <span className={styles.activeStatus}>
-                                  <strong>Status:</strong> Active
-                                </span>
-                              </>
-                            ) : (
-                              <>
-                                <XCircle
-                                  size={16}
-                                  className={`${styles.detailIcon} ${styles.inactiveIcon}`}
-                                />
-                                <span className={styles.inactiveStatus}>
-                                  <strong>Status:</strong> Inactive
-                                </span>
-                              </>
-                            )}
+                            <MapPin size={16} className={styles.detailIcon} />
+                            <span className={styles.provinceInfo}>
+                              <strong>Province:</strong> {member.province}
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -144,7 +179,7 @@ export default function RegisteredMembersClient() {
             </>
           )}
 
-          {!isSearching && (
+          {!isLoading && !error && !isSearching && (
             <div className={styles.searchPrompt}>
               <Search size={48} className={styles.promptIcon} />
               <p>Enter a name to search for members</p>
