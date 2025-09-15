@@ -110,8 +110,18 @@
     "shortDescription": "Details and requirements for the SACPVP Board Examination taking place on 25 September 2025, including fees, venues, and submission deadlines.",
     "date": "2025-09-25",
     "icon": "calendar",
-    "important": "true",
+    "important": "false",
     "content": "The South African Council for the Property Valuers Profession (SACPVP) will host the Board Examination on 25 September 2025. All delegates intending to write must complete and return the Board Examination Venue Form with proof of payment to admin@sacpvp.co.za before 25 September 2025. Payment of the examination fees is mandatory before candidates will be allowed to write.\n\nExamination Fees:\n- Professional Associated Valuer (Pr AVal): R3 700.00\n- Single Residential Property Assessor (SRPA): R3 700.00\n- Professional Valuer (Pr Val): R4 000.00\n\nAvailable Venues:\n- Cape Town\n- Durban\n- Port Elizabeth\n- Pretoria\n\nBanking Details:\n- Bank: ABSA Bank\n- Account No: 21 4028 5741\n- Account Type: Cheque account\n- Branch: Menlyn, 335 645\n\nPlease use your surname and registration number as reference when making payment.",
     "pdfUrl": "/announcements/Exam Venue Form - 25 SEPTEMBER 2025.pdf"
+  },
+  {
+    "id": 13,
+    "title": "Pre-Exam Workshop Programme – 16&17 September 2025",
+    "shortDescription": "The official programme for the Pre-Exam Workshop taking place on 16–17 September 2025 in Pretoria.",
+    "date": "2025-09-01",
+    "icon": "calendar",
+    "important": "true",
+    "content": "The South African Council for the Property Valuers Profession (SACPVP) invites all eligible candidates to attend the Pre-Exam Workshop in preparation for the upcoming Board Examination.\n\n📍 Venue: 158 Stella Street, Waterkloof, Pretoria\n🗓 Dates: 16 & 17 September 2025\n\nDay One (16 September 2025):\n- 09:00 – 09:30: Arrival & Registration\n- 09:30 – 10:00: Introduction (Registrar & Registration Team)\n- 10:00 – 10:30: Tea Break\n- 10:30 – 13:00: Time Value of Money — Mr. Maarten van Doesburgh\n- 13:00 – 13:45: Lunch Break\n- 13:45 – 16:30: Time Value of Money Q&A — Mr. Maarten van Doesburgh\n\nDay Two (17 September 2025):\n- 09:00 – 09:30: Arrival & Registration\n- 09:30 – 10:30: Time Value of Money — Mr. Maarten van Doesburgh\n- 10:30 – 11:00: Tea Break\n- 11:00 – 12:00: General Board Examination Scope — Mr. Maarten van Doesburgh\n- 12:00 – 13:30: Municipal Property Rates Act (as amended) & General Topics\n- 13:30: Lunch & Departure\n\nAttendance of this workshop is strongly recommended for all candidates preparing to write the September Board Examination.",
+    "pdfUrl": "/examinations/Pre-Exam Workshop Programme - 16  17 September 2025.pdf"
   }
 ]

@@ -1,6 +1,85 @@
 {
   "upcomingExaminations": [
     {
+      "id": 4,
+      "title": "Pre-Exam Workshop Programme",
+      "date": "16 & 17 September 2025",
+      "venue": "158 Stella Street, Waterkloof, 0181",
+      "pdfUrl": "/examinations/Pre-Exam Workshop Programme - 16  17 September 2025.pdf",
+      "days": [
+        {
+          "date": "16 September 2025",
+          "schedule": [
+            {
+              "time": "9:00am to 9:30am",
+              "topic": "Arrival (Registration)",
+              "icon": "users"
+            },
+            {
+              "time": "9:30am to 10:00am",
+              "topic": "Introduction (SACPVP) Registrar & Registration Team",
+              "icon": "users"
+            },
+            {
+              "time": "10:00am to 10:30am",
+              "topic": "Tea Break",
+              "icon": "coffee"
+            },
+            {
+              "time": "10:30am to 1:00pm",
+              "topic": "Time Value of Money: Mr Maarten van Doesburgh",
+              "icon": "book"
+            },
+            {
+              "time": "1:00pm to 1:45pm",
+              "topic": "Lunch Break",
+              "icon": "coffee"
+            },
+            {
+              "time": "1:45pm to 4:30pm",
+              "topic": "Time Value of Money: Mr Maarten van Doesburgh Question & Answer session",
+              "icon": "message"
+            }
+          ]
+        },
+        {
+          "date": "17 September 2025",
+          "schedule": [
+            {
+              "time": "9:00am to 9:30am",
+              "topic": "Arrival (Registration)",
+              "icon": "users"
+            },
+            {
+              "time": "9:30am to 10:30am",
+              "topic": "Time Value of Money: Mr Maarten van Doesburgh",
+              "icon": "book"
+            },
+            {
+              "time": "10:30am to 11:00am",
+              "topic": "Tea Break",
+              "icon": "coffee"
+            },
+            {
+              "time": "11:00am to 12:00pm",
+              "topic": "General Board Examination Scope: Mr Maarten van Doesburgh",
+              "icon": "book"
+            },
+            {
+              "time": "12:00pm to 1:30pm",
+              "topic": "Municipal Property Rates Act (as amended) & General Topics",
+              "icon": "file"
+            },
+            {
+              "time": "1:30pm",
+              "topic": "Lunch and Departure",
+              "icon": "coffee"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 3,
       "title": "Board Examination Notice - September 2025",
       "date": "Application Deadline: 30 June 2025 | Exam Date: 25 September 2025",
