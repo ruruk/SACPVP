@@ -56,7 +56,7 @@ export default function Navbar() {
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/announcements">Announcements</NavLink>
                 <NavLink href="/legal">Legal</NavLink>
-                <NavLink href="/ivsc">IVSC</NavLink>
+                <NavLink href="/standards">Standards</NavLink>
                 <NavLink href="/registration">Registration</NavLink>
                 <NavLink href="/examinations">Examinations</NavLink>
                 <NavLink href="/job-posts">Job Posts</NavLink>
@@ -109,8 +109,12 @@ export default function Navbar() {
             <NavLink href="/legal" onClick={() => setIsMenuOpen(false)} mobile>
               Legal
             </NavLink>
-            <NavLink href="/ivsc" onClick={() => setIsMenuOpen(false)} mobile>
-              IVSC
+            <NavLink
+              href="/standards"
+              onClick={() => setIsMenuOpen(false)}
+              mobile
+            >
+              Standards
             </NavLink>
             <NavLink
               href="/registration"
