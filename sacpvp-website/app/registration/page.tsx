@@ -6,11 +6,38 @@ import styles from "./registration.module.css";
 import Header from "@/components/global/header";
 
 export const metadata: Metadata = {
-  title: "Registration - SACPVP",
+  title: "Registration",
   description:
-    "Information about registering as a property valuer with the South African Council for the Property Valuers Profession. Learn about different registration types and requirements.",
-  keywords:
-    "SACPVP registration, property valuer registration, South Africa property valuation certification",
+    "Information about registering as a property valuer with the South African Council for the Property Valuers Profession. Learn about different registration types, requirements, and download application forms.",
+  keywords: [
+    "SACPVP registration",
+    "property valuer registration",
+    "South Africa property valuation certification",
+    "professional valuer registration",
+    "candidate valuer",
+    "property assessor registration",
+    "valuation profession certification",
+    "registration application form",
+  ],
+  openGraph: {
+    title: "Registration | SACPVP",
+    description:
+      "Information about registering as a property valuer with the South African Council for the Property Valuers Profession. Learn about different registration types and requirements.",
+    images: [
+      {
+        url: "/bannerImages/typing.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Property valuer registration process",
+      },
+    ],
+  },
+  twitter: {
+    title: "Registration | SACPVP",
+    description:
+      "Information about registering as a property valuer with the South African Council for the Property Valuers Profession. Learn about different registration types and requirements.",
+    images: ["/bannerImages/typing.jpeg"],
+  },
 };
 
 export default function Registration() {

@@ -61,6 +61,8 @@ export default function Navbar() {
                 <NavLink href="/examinations">Examinations</NavLink>
                 <NavLink href="/job-posts">Job Posts</NavLink>
                 <NavLink href="/registered-members">Registered Persons</NavLink>
+                {/* <NavLink href="/faq">FAQ</NavLink>
+                <NavLink href="/contact">Contact</NavLink> */}
                 {/* <NavLink href="/womens-day" className={styles.womensMonth}>
                   Women's Month
                 </NavLink> */}
@@ -137,13 +139,23 @@ export default function Navbar() {
             >
               Job Posts
             </NavLink>
-            <NavLink
+            {/* <NavLink
               href="/registered-members"
               onClick={() => setIsMenuOpen(false)}
               mobile
             >
               Registered Persons
             </NavLink>
+            <NavLink href="/faq" onClick={() => setIsMenuOpen(false)} mobile>
+              FAQ
+            </NavLink>
+            <NavLink
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
+              mobile
+            >
+              Contact
+            </NavLink> */}
             {/* <NavLink
               href="/womens-day"
               onClick={() => setIsMenuOpen(false)}

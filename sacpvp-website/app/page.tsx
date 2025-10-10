@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import LinksSection from "@/components/links-section";
 import AnnouncementsSection from "@/components/announcements-section";
 import AboutSection from "@/components/about-section";
@@ -5,6 +6,41 @@ import ConstructionNotice from "@/components/construction-notice";
 import MemberSearchWidget from "@/components/member-search-widget";
 import Header from "@/components/global/header";
 import WomensDaySection from "@/components/womens-day-section";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Welcome to SACPVP - The South African Council for the Property Valuers Profession. Find registered valuers, examination information, professional standards, and regulatory updates for the property valuation industry in South Africa.",
+  keywords: [
+    "SACPVP home",
+    "property valuers South Africa",
+    "registered valuers",
+    "property valuation council",
+    "real estate professionals",
+    "property assessment",
+    "valuation standards",
+    "professional regulation",
+  ],
+  openGraph: {
+    title: "SACPVP - South African Council for the Property Valuers Profession",
+    description:
+      "Welcome to SACPVP - The South African Council for the Property Valuers Profession. Find registered valuers, examination information, professional standards, and regulatory updates.",
+    images: [
+      {
+        url: "/bannerImages/houses1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Property valuation professionals in South Africa",
+      },
+    ],
+  },
+  twitter: {
+    title: "SACPVP - South African Council for the Property Valuers Profession",
+    description:
+      "Welcome to SACPVP - The South African Council for the Property Valuers Profession. Find registered valuers, examination information, professional standards, and regulatory updates.",
+    images: ["/bannerImages/houses1.jpg"],
+  },
+};
 
 export default function Home() {
   return (

@@ -1,6 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/global/header";
 import styles from "./not-found.module.css";
+
+export const metadata: Metadata = {
+  title: "Page Not Found - 404",
+  description:
+    "The page you're looking for doesn't exist. Return to the SACPVP homepage or browse our available sections including announcements, examinations, and member directory.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default function NotFound() {
   return (

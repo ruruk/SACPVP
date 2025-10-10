@@ -1,5 +1,15 @@
 [
   {
+    "id": 14,
+    "title": "Important Notice: Temporary Service Impact",
+    "shortDescription": "SACPVP has encountered an unforeseen challenge that may temporarily impact response times. Alternative arrangements are being implemented.",
+    "date": "2025-10-10",
+    "icon": "bell",
+    "important": "true",
+    "content": "Dear Registered Persons\n\nPlease be advised that the South African Council for the Property Valuers Profession (SACPVP) has encountered an unforeseen challenge, which may temporarily impact our response time to correspondence and service requests.\n\nPlease be assured that SACPVP is actively implementing alternative arrangements to address this matter and minimise any inconvenience. We remain committed to maintaining the standard of service expected by our registered persons and will keep you informed of progress in resolving the situation.\n\nWe sincerely apologise for any inconvenience this may cause and appreciate your patience and understanding during this period.",
+    "pdfUrl": "/announcements/ANNOUNCEMENT_SACPVP.pdf"
+  },
+  {
     "id": 1,
     "title": "2025 PRACTICAL WORKSCHOOL DIRECTION",
     "shortDescription": "Detailed directions and travel information for the 2025 Practical Workschool venue at Kopanong Hotel.",
