@@ -22,8 +22,8 @@ export default function AnnouncementsClient() {
     setOpenAccordion(openAccordion === id ? null : id);
   };
 
-  // Sort announcements to put important ones first
-  const sortedAnnouncements = [...announcements].sort((a, b) => {
+  // Reverse array first (newest first), then sort to put important ones first
+  const sortedAnnouncements = [...announcements].reverse().sort((a, b) => {
     if (a.important === "true" && b.important !== "true") return -1;
     if (a.important !== "true" && b.important === "true") return 1;
     return 0;

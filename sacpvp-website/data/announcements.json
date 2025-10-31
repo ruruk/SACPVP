@@ -97,41 +97,32 @@
   },
   {
     "id": 10,
-    "title": "September 2025 Board Examination Rescheduled",
-    "shortDescription": "The September Board Exam has been rescheduled to 25 September 2025. Applicable only to registered persons who applied.",
-    "date": "2025-08-15",
-    "icon": "calendar",
-    "important": "false",
-    "content": "To All Registered Ca Val & Pr Aval\n\nThe September Board examination has been re-scheduled to 25th September 2025 due to several requests from Registered Persons attending the V20 Summit and Conference, 2 days prior in Cape Town. (i.e. on the 15th and 16th).\n\nThe assessment of the applications to write the Board examination will be completed before the end of next week and the outcomes will be communicated thereafter.\n\nWe would like to apologise for the delay of releasing the outcome of your application to write the Board Exam.\n\nPlease note: This message is meant only for the Registered persons who have applied to write the Board Exam on 25 September 2025."
+    "title": "Board Examination Notice – March 2026",
+    "shortDescription": "Applications open for the 19 March 2026 Board Examination. Closing date: 05 December 2025. Courier/hand-delivery only.",
+    "date": "2025-10-03",
+    "icon": "clipboard-list",
+    "important": "true",
+    "content": "The SACPVP is accepting Board exam applications for 19 March 2026. Submit by courier or hand delivery to Mr. Ntsweng; email submissions are NOT accepted. Closing date: 05 December 2025.\n\nWho can apply:\n- Registered Candidate Valuers (≥2 years) with accredited Real Estate qualification\n- Registered Professional Associated Valuers\n- Pr AVals may apply for Pr Val admission exam if they meet degree and tenure requirements\n\nApplication pack includes:\n- Completed application (incl. Experience Matrix + supporting docs)\n- Certified qualifications + transcripts (≤3 months old)\n- Certified ID/passport + valid work permit (if applicable)\n- Detailed CV\n- Supervisor/mentor letter (with SACPVP reg no. + postal address)\n- Practical Workschool certificate (compulsory)\n\nNotes:\n- Prior unsuccessful candidates and previously approved but unable-to-write candidates should NOT submit new applications—email confirmation before the closing date suffices.\n- Exam will be held in a physical/contact session.\n\nFees (VAT incl.; 50% refundable until 14 days before Exam):\n- Pr AVal exam: R3,700.00\n- Pr AVal writing Pr Val exam: R4,000.00\n(Payment requested once application is approved.)",
+    "pdfUrl": "/announcements/BOARD EXAM NOTICE_MARCH 2026.pdf"
   },
   {
     "id": 11,
-    "title": "SACPVP 2025 Practical Work-School — Final Programme",
-    "shortDescription": "The confirmed final 5-day programme for the 2025 Practical Work-School at Kopanong Hotel, 25–29 August 2025.",
-    "date": "2025-08-19",
-    "icon": "calendar",
+    "title": "Board Examination Rules – March 2026",
+    "shortDescription": "Three-hour contact exam. Laptops (blank spreadsheets) and financial calculators allowed. Pass mark 60% with TVM sub-minimum 40%.",
+    "date": "2025-10-03",
+    "icon": "file-text",
     "important": "true",
-    "content": "Venue: Kopanong Hotel & Conference Centre, Benoni\n\nDAY 1 — Mon 25 Aug\n07:45 Registration & Refreshments — SACPVP Admin\n08:30 Official Opening — President John Cloete\n08:45 Overview of International Valuation Standards (IVS) — John Cloete\n10:15 Role of Regulatory Body; Professionalism & Exam Rules — Registrar\n10:45 Legislative Framework; Code of Conduct & Ethics — Gabriel Mashishi\n11:30–15:45 Financial & academic valuation concepts; Time Value of Money (TVM) — Maarten van Doesburgh (with lunch & breaks)\n17:00 End of Day One\n\nDAY 2 — Tue 26 Aug\n07:45 Registration — Admin\n08:30 Discounted Cash Flow (DCF) & Capital Budgeting — Maarten van Doesburgh\n09:30 TVM Revision — All Delegates\n10:30 TVM Test — All Delegates\n12:00 Valuation of Petrol Filling Stations (Practical) — Dr Nosipho Moloi\n14:15 Statutory Valuations — Cllr Tiny Dlamini\n15:30 Practical Session & Presentations — SAIV, BPVA & Mentors; Demos on value attributes, floor area measurement, town planning, building components; Registration briefing — Admin\n18:30 End of Day Two\n\nDAY 3 — Wed 27 Aug\n07:45 Registration — Admin\n08:30 The Role of the Valuer in the Economy — Patrick O’Connell\n10:00 MPRA & Municipal Rating; Standards Development + Q&A — Cllr Rakesh Ramlugaan & Dr Janet Channing\n11:30 Meeting with Team Leaders — Registered Valuers\n13:00 Site Visit: Practical Valuation — Isando Industrial Park, Gauteng\n17:00 End of Day Three\n\nDAY 4 — Thu 28 Aug\n07:45 Registration — Admin\n08:30 Investment Analysis — Marno Booyens\n11:00 The Role of AI in Revolutionising Valuations — Sean Godoy\n14:00 Practical Valuation Discussion: Commercial/Industrial Property — President John Cloete & Cllr M. Chidi\n15:45 Group Assignment: Instruction & Discussion — President John Cloete\n17:00 End of Day Four\n\nDAY 5 — Fri 29 Aug\n07:45 Registration — Admin\n08:30 Recap & Revision — Presenters\n10:00 Final Test (90 minutes) — All Attendees\n11:45 Certificates, Photographs & Closure — President, Vice President, Councillors & Admin\nLunch & Departure",
-    "pdfUrl": "/announcements/SACPVP 2025 PWS_ PROGRAMME_Final_NEW.pdf"
+    "content": "Key rules:\n- Duration: 3 hours; complete on supplied paper only.\n- Devices: Financial calculator and laptop allowed for blank spreadsheet (no internet/apps). Email spreadsheet before leaving the venue to registrar@sacpvp.co.za and vandoesburghm@cput.ac.za.\n- Sequence: Hand in Sections A & B before opening the laptop for spreadsheets; no return to A & B thereafter.\n- Pass requirements: Overall 60% with a 40% sub-minimum for Time Value of Money (TVM).\n- Conduct: No speaking, cheating, or external materials. No eating/drinking. Phones prohibited. Invigilator decisions are final; irregularities may cancel the exam.\n- Admin: No removing papers from venue. Scripts received late won’t be marked. Include registration number in spreadsheet/file/email subject.\n- Script viewing: Pay within 5 working days of results; viewing within 7 days. No viewing for Supplementary exams.",
+    "pdfUrl": "/announcements/BOARD EXAMINATION RULES_MARCH 2026.pdf"
   },
   {
     "id": 12,
-    "title": "Board Examination Venue Form – 25 September 2025",
-    "shortDescription": "Details and requirements for the SACPVP Board Examination taking place on 25 September 2025, including fees, venues, and submission deadlines.",
-    "date": "2025-09-25",
-    "icon": "calendar",
+    "title": "Board Examination Venues – 19 March 2026",
+    "shortDescription": "Venue list for Durban, Pretoria, Cape Town, East London, and Port Elizabeth (subject to change; advance notice will be given).",
+    "date": "2025-10-31",
+    "icon": "map-pin",
     "important": "false",
-    "content": "The South African Council for the Property Valuers Profession (SACPVP) will host the Board Examination on 25 September 2025. All delegates intending to write must complete and return the Board Examination Venue Form with proof of payment to admin@sacpvp.co.za before 25 September 2025. Payment of the examination fees is mandatory before candidates will be allowed to write.\n\nExamination Fees:\n- Professional Associated Valuer (Pr AVal): R3 700.00\n- Single Residential Property Assessor (SRPA): R3 700.00\n- Professional Valuer (Pr Val): R4 000.00\n\nAvailable Venues:\n- Cape Town\n- Durban\n- Port Elizabeth\n- Pretoria\n\nBanking Details:\n- Bank: ABSA Bank\n- Account No: 21 4028 5741\n- Account Type: Cheque account\n- Branch: Menlyn, 335 645\n\nPlease use your surname and registration number as reference when making payment.",
-    "pdfUrl": "/announcements/Exam Venue Form - 25 SEPTEMBER 2025.pdf"
-  },
-  {
-    "id": 13,
-    "title": "Pre-Exam Workshop Programme – 16&17 September 2025",
-    "shortDescription": "The official programme for the Pre-Exam Workshop taking place on 16–17 September 2025 in Pretoria.",
-    "date": "2025-09-01",
-    "icon": "calendar",
-    "important": "true",
-    "content": "The South African Council for the Property Valuers Profession (SACPVP) invites all eligible candidates to attend the Pre-Exam Workshop in preparation for the upcoming Board Examination.\n\n📍 Venue: 158 Stella Street, Waterkloof, Pretoria\n🗓 Dates: 16 & 17 September 2025\n\nDay One (16 September 2025):\n- 09:00 – 09:30: Arrival & Registration\n- 09:30 – 10:00: Introduction (Registrar & Registration Team)\n- 10:00 – 10:30: Tea Break\n- 10:30 – 13:00: Time Value of Money — Mr. Maarten van Doesburgh\n- 13:00 – 13:45: Lunch Break\n- 13:45 – 16:30: Time Value of Money Q&A — Mr. Maarten van Doesburgh\n\nDay Two (17 September 2025):\n- 09:00 – 09:30: Arrival & Registration\n- 09:30 – 10:30: Time Value of Money — Mr. Maarten van Doesburgh\n- 10:30 – 11:00: Tea Break\n- 11:00 – 12:00: General Board Examination Scope — Mr. Maarten van Doesburgh\n- 12:00 – 13:30: Municipal Property Rates Act (as amended) & General Topics\n- 13:30: Lunch & Departure\n\nAttendance of this workshop is strongly recommended for all candidates preparing to write the September Board Examination.",
-    "pdfUrl": "/examinations/Pre-Exam Workshop Programme - 16  17 September 2025.pdf"
+    "content": "Scheduled contact venues for 19 March 2026 (subject to change):\n- Durban: Embassy Building, 15th Floor, 199 Anton Lembede St (Smith)\n- Pretoria: NG Kerk, 158 Stella Street, Waterkloof, 0181\n- Cape Town: CPUT, Real Estate Dept (Unit of Applied Economics), Room E3.39, Engineering Building, c/o Keizergracht & Tennant St, Zonnebloem, 8001\n- East London: 1 Cavendish Road, Vincent (Second Office opposite Tiger Wheel & Tyre and Vincent Hardware)\n- Port Elizabeth (Gqeberha): Beach Hotel Banqueting, Marine Drive, Summerstrand, 6000",
+    "pdfUrl": "/announcements/BOARD EXAMINATION VENUES_VARIOUS_MARCH 2026.pdf"
   }
 ]

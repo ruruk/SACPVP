@@ -1,84 +1,83 @@
 {
   "upcomingExaminations": [
     {
-      "id": 3,
-      "title": "Board Examination Notice - September 2025",
-      "date": "Application Deadline: 30 June 2025 | Exam Date: 25 September 2025",
-      "venue": "Physical/Contact Session",
-      "pdfUrls": [
+      "id": 5,
+      "title": "Pre-Exam Workshop Programme",
+      "date": "5 & 6 March 2026",
+      "venue": "NG Kerk Stellastraat, 154 Stella Street, Waterkloof, Pretoria",
+      "pdfUrl": "/examinations/PRE-EXAM WORKSHOP PROGRAMME_2026.pdf",
+      "days": [
         {
-          "title": "BOARD EXAM NOTICE",
-          "url": "/examinations/BOARD EXAM NOTICE_SEPTEMBER 2025.pdf"
+          "date": "05 March 2026",
+          "schedule": [
+            {
+              "time": "9:00am to 9:30am",
+              "topic": "Arrival (Registration)",
+              "icon": "users"
+            },
+            {
+              "time": "9:30am to 10:00am",
+              "topic": "Introduction (SACPVP) Registrar & Registration Team",
+              "icon": "users"
+            },
+            {
+              "time": "10:00am to 10:30am",
+              "topic": "Tea Break",
+              "icon": "coffee"
+            },
+            {
+              "time": "10:30am to 1:00pm",
+              "topic": "Time Value of Money: Mr Maarten van Doesburgh",
+              "icon": "book"
+            },
+            {
+              "time": "1:00pm to 1:45pm",
+              "topic": "Lunch Break",
+              "icon": "coffee"
+            },
+            {
+              "time": "1:45pm to 4:30pm",
+              "topic": "Time Value of Money: Mr Maarten van Doesburgh Question & Answer session",
+              "icon": "message"
+            }
+          ]
         },
         {
-          "title": "Examination Form",
-          "url": "/announcements/Exam Venue Form - 25 SEPTEMBER 2025.pdf"
-        },
-        {
-          "title": "Examination Rules",
-          "url": "/examinations/BOARD EXAMINATION RULES_SEPT 2025.pdf"
-        },
-        {
-          "title": "Examination Venues",
-          "url": "/examinations/BOARD EXAMINATION VENUES_VARIOUS_SEPT.pdf"
+          "date": "06 March 2026",
+          "schedule": [
+            {
+              "time": "9:00am to 9:30am",
+              "topic": "Arrival (Registration)",
+              "icon": "users"
+            },
+            {
+              "time": "9:30am to 10:30am",
+              "topic": "Time Value of Money: Mr Maarten van Doesburgh",
+              "icon": "book"
+            },
+            {
+              "time": "10:30am to 11:00am",
+              "topic": "Tea Break",
+              "icon": "coffee"
+            },
+            {
+              "time": "11:00am to 12:00pm",
+              "topic": "General Board Examination Scope: Mr Maarten van Doesburgh",
+              "icon": "book"
+            },
+            {
+              "time": "12:00pm to 1:30pm",
+              "topic": "Municipal Property Rates Act (as amended) & General Topics",
+              "icon": "file"
+            },
+            {
+              "time": "1:30pm",
+              "topic": "Lunch and Departure",
+              "icon": "coffee"
+            }
+          ]
         }
-      ],
-      "noticeType": "important",
-      "sections": [
-        {
-          "title": "Application Requirements",
-          "icon": "file-text",
-          "items": [
-            "Properly completed application form including the regulated Experience Matrix with supporting documents",
-            "Certified copies of accredited qualification/s with academic transcript/s (not older than 3 months)",
-            "Certified copy of ID or passport and valid work permit",
-            "Updated and detailed curriculum vitae (CV)",
-            "Letter from supervisor/mentor confirming all valuations were performed under their supervision",
-            "Practical Work school certificate (compulsory)"
-          ]
-        },
-        {
-          "title": "Important Notes",
-          "icon": "alert-circle",
-          "items": [
-            "Applications must be submitted by courier or hand delivery - email applications will NOT be accepted",
-            "Previous exam candidates who failed do not need to submit new applications",
-            "Candidates attending practical workschool for the first time in August 2025 will not be allowed to write the exam in September",
-            "The Board exam will be in a physical/contact session"
-          ]
-        },
-        {
-          "title": "Eligibility",
-          "icon": "check-circle",
-          "items": [
-            "Registered Candidate Valuers who completed their accredited Real Estate qualification",
-            "Registered Professional Associated who have been registered with the Council for more than 2 years",
-            "Registered Candidate Valuer registered for 2+ years with 4 years accredited degree can apply for Professional Valuers exam",
-            "Professional Associated Valuers applying for Professional Valuer exam need accredited four-year degree or diploma with additional qualifications"
-          ]
-        },
-        {
-          "title": "Examination Fees (VAT Inclusive)",
-          "icon": "dollar-sign",
-          "items": [
-            "Candidates writing Professional Associated Valuer (Pr Aval) examination: R3,700.00",
-            "Professional Associated Valuer writing the Professional Valuer examination: R4,000.00",
-            "Payment will be requested once your application has been approved",
-            "50% refundable until 14 days before Exam"
-          ]
-        }
-      ],
-      "contacts": [
-        {
-          "title": "MANAGER: REGISTRATIONS",
-          "name": "Ms MM Monyamane"
-        },
-        {
-          "title": "REGISTRAR",
-          "name": "Ms ND Naidoo"
-        }
-      ],
-      "noticeDate": "31 July 2025"
+      ]
     },
     {
       "id": 2,
@@ -137,7 +136,7 @@
         },
         {
           "eventType": "Examination",
-          "registrationPeriod": "1 October – 30 Nov 2025",
+          "registrationPeriod": "1 October – 05 December 2025",
           "eventDate": "18 March 2026",
           "paymentDueDate": "28 February 2026"
         },
@@ -308,6 +307,86 @@
           ]
         }
       ]
+    },
+    {
+      "id": 3,
+      "title": "Board Examination Notice - September 2025",
+      "date": "Application Deadline: 30 June 2025 | Exam Date: 25 September 2025",
+      "venue": "Physical/Contact Session",
+      "pdfUrls": [
+        {
+          "title": "BOARD EXAM NOTICE",
+          "url": "/examinations/BOARD EXAM NOTICE_SEPTEMBER 2025.pdf"
+        },
+        {
+          "title": "Examination Form",
+          "url": "/announcements/Exam Venue Form - 25 SEPTEMBER 2025.pdf"
+        },
+        {
+          "title": "Examination Rules",
+          "url": "/examinations/BOARD EXAMINATION RULES_SEPT 2025.pdf"
+        },
+        {
+          "title": "Examination Venues",
+          "url": "/examinations/BOARD EXAMINATION VENUES_VARIOUS_SEPT.pdf"
+        }
+      ],
+      "noticeType": "important",
+      "sections": [
+        {
+          "title": "Application Requirements",
+          "icon": "file-text",
+          "items": [
+            "Properly completed application form including the regulated Experience Matrix with supporting documents",
+            "Certified copies of accredited qualification/s with academic transcript/s (not older than 3 months)",
+            "Certified copy of ID or passport and valid work permit",
+            "Updated and detailed curriculum vitae (CV)",
+            "Letter from supervisor/mentor confirming all valuations were performed under their supervision",
+            "Practical Work school certificate (compulsory)"
+          ]
+        },
+        {
+          "title": "Important Notes",
+          "icon": "alert-circle",
+          "items": [
+            "Applications must be submitted by courier or hand delivery - email applications will NOT be accepted",
+            "Previous exam candidates who failed do not need to submit new applications",
+            "Candidates attending practical workschool for the first time in August 2025 will not be allowed to write the exam in September",
+            "The Board exam will be in a physical/contact session"
+          ]
+        },
+        {
+          "title": "Eligibility",
+          "icon": "check-circle",
+          "items": [
+            "Registered Candidate Valuers who completed their accredited Real Estate qualification",
+            "Registered Professional Associated who have been registered with the Council for more than 2 years",
+            "Registered Candidate Valuer registered for 2+ years with 4 years accredited degree can apply for Professional Valuers exam",
+            "Professional Associated Valuers applying for Professional Valuer exam need accredited four-year degree or diploma with additional qualifications"
+          ]
+        },
+        {
+          "title": "Examination Fees (VAT Inclusive)",
+          "icon": "dollar-sign",
+          "items": [
+            "Candidates writing Professional Associated Valuer (Pr Aval) examination: R3,700.00",
+            "Professional Associated Valuer writing the Professional Valuer examination: R4,000.00",
+            "Payment will be requested once your application has been approved",
+            "50% refundable until 14 days before Exam"
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "title": "MANAGER: REGISTRATIONS",
+          "name": "Ms MM Monyamane"
+        },
+        {
+          "title": "REGISTRAR",
+          "name": "Ms ND Naidoo"
+        }
+      ],
+      "noticeDate": "31 July 2025"
     }
   ]
 }
