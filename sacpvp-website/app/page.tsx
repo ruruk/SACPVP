@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LinksSection from "@/components/links-section";
 import AnnouncementsSection from "@/components/announcements-section";
+import AnnualReportSection from "@/components/annual-report-section";
 import AboutSection from "@/components/about-section";
 import ConstructionNotice from "@/components/construction-notice";
 import MemberSearchWidget from "@/components/member-search-widget";
@@ -54,7 +55,14 @@ export default function Home() {
       <AnnouncementsSection />
       {/* <WomensDaySection /> */}
       <MemberSearchWidget />
-      <AboutSection />
+      <section className="two-column-section">
+        <div className="container">
+          <div className="two-column-grid">
+            <AboutSection />
+            <AnnualReportSection />
+          </div>
+        </div>
+      </section>
       <ConstructionNotice />
     </main>
   );

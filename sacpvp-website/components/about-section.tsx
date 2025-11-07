@@ -2,9 +2,8 @@ import styles from "./about-section.module.css"
 
 export default function AboutSection() {
   return (
-    <section id="about" className={styles.aboutSection}>
-      <div className="container">
-        <div className={styles.content}>
+    <div id="about" className={styles.aboutSection}>
+      <div className={styles.content}>
           <h2 className={styles.title}>About SACPVP</h2>
 
           <div className={styles.description}>
@@ -30,8 +29,7 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
   )
 }
 

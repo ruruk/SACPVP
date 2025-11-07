@@ -73,3 +73,20 @@ a {
   transform: scale(1.05);
 }
 
+.two-column-section {
+  padding: 3rem 0 4rem;
+  background-color: white;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .two-column-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

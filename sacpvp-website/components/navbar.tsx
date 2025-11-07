@@ -56,6 +56,7 @@ export default function Navbar() {
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/announcements">Announcements</NavLink>
                 <NavLink href="/legal">Legal</NavLink>
+                <NavLink href="/annual-report">Annual Report</NavLink>
                 <NavLink href="/standards">Standards</NavLink>
                 <NavLink href="/registration">Registration</NavLink>
                 <NavLink href="/examinations">Examinations</NavLink>
@@ -110,6 +111,13 @@ export default function Navbar() {
             </NavLink>
             <NavLink href="/legal" onClick={() => setIsMenuOpen(false)} mobile>
               Legal
+            </NavLink>
+            <NavLink
+              href="/annual-report"
+              onClick={() => setIsMenuOpen(false)}
+              mobile
+            >
+              Annual Report
             </NavLink>
             <NavLink
               href="/standards"

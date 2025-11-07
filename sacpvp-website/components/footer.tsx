@@ -45,7 +45,7 @@ export default function Footer() {
           <div className={styles.section}>
             <h3 className={styles.sectionTitle}>Resources</h3>
             <ul className={styles.linkList}>
-              <FooterLink href="#">Annual Reports</FooterLink>
+              <FooterLink href="/annual-report">Annual Reports</FooterLink>
               <FooterLink href="#">Legislation</FooterLink>
               <FooterLink href="#">Forms & Documents</FooterLink>
               <FooterLink href="#">FAQs</FooterLink>
