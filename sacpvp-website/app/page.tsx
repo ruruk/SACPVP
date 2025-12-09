@@ -4,6 +4,7 @@ import AnnouncementsSection from "@/components/announcements-section";
 import AnnualReportSection from "@/components/annual-report-section";
 import AboutSection from "@/components/about-section";
 import ConstructionNotice from "@/components/construction-notice";
+import ClosureNotice from "@/components/closure-notice";
 import MemberSearchWidget from "@/components/member-search-widget";
 import Header from "@/components/global/header";
 import WomensDaySection from "@/components/womens-day-section";
@@ -51,6 +52,7 @@ export default function Home() {
         subtitle="Regulating and advancing the property valuation profession in South Africa"
         backgroundImage="/bannerImages/houses1.jpg"
       />
+      <ClosureNotice />
       <LinksSection />
       <AnnouncementsSection />
       {/* <WomensDaySection /> */}

@@ -1,0 +1,79 @@
+.closureSection {
+  position: relative;
+  background: linear-gradient(135deg, #3da844 0%, #52ae58 100%);
+  padding: 2rem 1.5rem;
+  margin: 2rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid #ff6b9d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 80px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.title {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(163, 238, 167, 0.8);
+}
+
+.message {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cee0cf;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .closureSection {
+    margin: 2rem 2rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .message {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .closureSection {
+    margin: 2rem 3rem;
+    padding: 3rem 2.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .closureSection {
+    margin: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .closureSection {
+    margin: 2rem 6rem;
+  }
+}
