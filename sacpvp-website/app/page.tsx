@@ -52,7 +52,6 @@ export default function Home() {
         subtitle="Regulating and advancing the property valuation profession in South Africa"
         backgroundImage="/bannerImages/houses1.jpg"
       />
-      <ClosureNotice />
       <LinksSection />
       <AnnouncementsSection />
       {/* <WomensDaySection /> */}
