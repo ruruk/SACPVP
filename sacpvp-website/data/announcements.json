@@ -1,15 +1,5 @@
 [
   {
-    "id": 14,
-    "title": "Important Notice: Temporary Service Impact",
-    "shortDescription": "SACPVP has encountered an unforeseen challenge that may temporarily impact response times. Alternative arrangements are being implemented.",
-    "date": "2025-10-10",
-    "icon": "bell",
-    "important": "true",
-    "content": "Dear Registered Persons\n\nPlease be advised that the South African Council for the Property Valuers Profession (SACPVP) has encountered an unforeseen challenge, which may temporarily impact our response time to correspondence and service requests.\n\nPlease be assured that SACPVP is actively implementing alternative arrangements to address this matter and minimise any inconvenience. We remain committed to maintaining the standard of service expected by our registered persons and will keep you informed of progress in resolving the situation.\n\nWe sincerely apologise for any inconvenience this may cause and appreciate your patience and understanding during this period.",
-    "pdfUrl": "/announcements/ANNOUNCEMENT_SACPVP.pdf"
-  },
-  {
     "id": 3,
     "title": "2025-2026 Examination Information",
     "shortDescription": "Important information regarding the upcoming professional examinations for the 2025-2026 academic year.",
@@ -81,5 +71,25 @@
     "important": "false",
     "content": "Scheduled contact venues for 19 March 2026 (subject to change):\n- Durban: Embassy Building, 15th Floor, 199 Anton Lembede St (Smith)\n- Pretoria: NG Kerk, 158 Stella Street, Waterkloof, 0181\n- Cape Town: CPUT, Real Estate Dept (Unit of Applied Economics), Room E3.39, Engineering Building, c/o Keizergracht & Tennant St, Zonnebloem, 8001\n- East London: 1 Cavendish Road, Vincent (Second Office opposite Tiger Wheel & Tyre and Vincent Hardware)\n- Port Elizabeth (Gqeberha): Beach Hotel Banqueting, Marine Drive, Summerstrand, 6000",
     "pdfUrl": "/announcements/BOARD EXAMINATION VENUES_VARIOUS_MARCH 2026.pdf"
+  },
+  {
+    "id": 16,
+    "title": "SACPVP Announcement – March 2026 Pre-Exam Workshop and Board Examination",
+    "shortDescription": "Revised dates for the March 2026 Pre-Exam Workshop and Board Examination.",
+    "date": "2026-02-10",
+    "icon": "bell",
+    "important": "true",
+    "content": "ANNOUNCEMENT\n\nTHE MARCH 2026 PRE-EXAM WORKSHOP AND THE MARCH 2026 BOARD EXAMINATION\n\n1. Pre-Exam Workshop\nThe initial dates for the above was 5th and 6th March 2026. We regret to inform that the revised dates are now 12th and 13th March 2026.\n\nThe Pre-Exam Workshop is hosted in Pretoria. It will be a contact session.\nThe Venue will be confirmed in due course.\n\n2. The Board Examination\nThe initial date for the above was 19th March 2026. We regret to inform that the revised date is now 25th March 2026.\n\nThe Board Examinations are hosted in different centres throughout South Africa bi-annually.\nThe Venues will be confirmed in due course.\n\nApologies for the inconvenience, however timeous communication will be sent through.\n\nThank you.\n\nYours Faithfully\nND Naidoo\nRegistrar",
+    "pdfUrl": "/announcements/ANNOUNCEMENT_PRE EXAM_BOARD EXAM_2026.pdf"
+  },
+  {
+    "id": 15,
+    "title": "SACPVP Notice – Temporary Delay in Response Time",
+    "shortDescription": "Notice to all Registered Persons and Stakeholders regarding temporary delays due to internal staff changes.",
+    "date": "2026-02-10",
+    "icon": "bell",
+    "important": "true",
+    "content": "Attention: All Registered Persons\nStakeholders\n\nSUBJECT: NOTICE OF TEMPORARY DELAY IN RESPONSE TIME\n\nDear Registered Persons\nThe South African Council for the Property Valuers Profession (SACPVP) hereby advises that recent internal staff changes have resulted in temporary delays in the execution of certain administrative functions.\n\nThe Council appreciates the Registered persons and Stakeholder’s patience and understanding during this period and apologises for any inconvenience that may have been caused. The Council confirms that normal operations will be fully restored shortly.\n\nOutstanding matters and backlogs are currently being addressed as a matter of urgency.\n\nYours Faithfully\nND Naidoo\nRegistrar",
+    "pdfUrl": "/announcements/ANNOUNCEMENT_SACPVP_Feb 2026.pdf"
   }
 ]
