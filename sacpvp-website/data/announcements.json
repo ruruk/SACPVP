@@ -1,5 +1,15 @@
 [
   {
+    "id": 17,
+    "title": "Pre-Exam Workshop Moved to 12 & 13 March 2026",
+    "shortDescription": "The March 2026 Pre-Exam Workshop has been moved to 12th and 13th March; it will no longer take place on 5th and 6th March.",
+    "date": "2026-02-12",
+    "icon": "calendar",
+    "important": "true",
+    "content": "IMPORTANT: Date change for the March 2026 Pre-Exam Workshop.\n\nThe Pre-Exam Workshop originally scheduled for 5th and 6th March 2026 has been moved to 12th and 13th March 2026.\n\nThe workshop will be hosted in Pretoria as a contact session. The venue will be confirmed in due course.\n\nPlease download the updated programme (PDF) below for the full schedule and details.\n\nApologies for any inconvenience. Timeous communication will be sent through for any further updates.",
+    "pdfUrl": "/announcements/PRE-EXAM WORKSHOP PROGRAMME_MARCH 2026_12_13M.pdf"
+  },
+  {
     "id": 3,
     "title": "2025-2026 Examination Information",
     "shortDescription": "Important information regarding the upcoming professional examinations for the 2025-2026 academic year.",
@@ -18,19 +28,6 @@
     "important": "false",
     "content": "We are excited to announce the launch of our upgraded website! Our new platform features improved navigation, enhanced search functionality, and a more user-friendly interface.\n\nKey improvements include:\n- Faster loading times\n- Mobile-responsive design\n- Enhanced member search capabilities\n- Streamlined registration processes\n- Improved accessibility features\n\nWe encourage all members to explore the new features and provide feedback to help us continue improving your experience.",
     "pdfUrl": "/announcements/website-upgrade-announcement.pdf"
-  },
-  {
-    "id": 7,
-    "title": "External Vacancy: Manager – Valuations (Alfred Duma Local Municipality)",
-    "shortDescription": "The Alfred Duma Local Municipality invites applications for the position of Manager: Valuations. Applications close on 08 August 2025.",
-    "date": "2025-07-24",
-    "icon": "briefcase",
-    "important": "true",
-    "content": "The Alfred Duma Local Municipality has issued External Notice No. 58 of 2025 for the position of Manager: Valuations in the Budget and Treasury Department. This position is open to qualified professionals registered with the South African Council for the Property Valuers Profession (SACPVP).\n\nPosition: Manager: Valuations\nLocation: Ladysmith, KwaZulu-Natal\nSalary: R796,628.17 – R1,034,083.85 per annum (Task Grade 17)\n\nMinimum Requirements:\n- National Diploma (NQF Level 6) or Degree (NQF Level 7) in Property Valuation or relevant equivalent\n- Registered as a Professional Valuer or Professional Associated Valuer (no restrictions)\n- 5 years' experience in municipal valuations\n- Valid Code B or EB Driver’s License\n- Strong knowledge of the Municipal Property Rates Act\n\nKey Responsibilities:\n- Compilation and maintenance of General and Supplementary Valuation Rolls\n- Property inspections and market valuations for municipal purposes\n- Attend to valuation objections and appeals\n- Support in managing the municipal fixed asset register\n\nClosing Date: 08 August 2025, 16:00\n\nFor full application details, visit the SACPVP job posts page below.",
-    "goToPage": {
-      "label": "View on job posts",
-      "url": "/job-posts/"
-    }
   },
   {
     "id": 9,

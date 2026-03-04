@@ -3,12 +3,12 @@
     {
       "id": 5,
       "title": "Pre-Exam Workshop Programme",
-      "date": "5 & 6 March 2026",
+      "date": "12 & 13 March 2026",
       "venue": "NG Kerk Stellastraat, 154 Stella Street, Waterkloof, Pretoria",
-      "pdfUrl": "/examinations/PRE-EXAM WORKSHOP PROGRAMME_2026.pdf",
+      "pdfUrl": "/announcements/PRE-EXAM WORKSHOP PROGRAMME_MARCH 2026_12_13M.pdf",
       "days": [
         {
-          "date": "05 March 2026",
+          "date": "12 March 2026",
           "schedule": [
             {
               "time": "9:00am to 9:30am",
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "date": "06 March 2026",
+          "date": "13 March 2026",
           "schedule": [
             {
               "time": "9:00am to 9:30am",
@@ -130,14 +130,14 @@
         },
         {
           "eventType": "Pre-Exam Workshop",
-          "registrationPeriod": "18 – 28 February 2025",
-          "eventDate": "5 & 6 March 2026",
-          "paymentDueDate": "28 February 2025"
+          "registrationPeriod": "18 – 28 February 2026",
+          "eventDate": "12 & 13 March 2026",
+          "paymentDueDate": "28 February 2026"
         },
         {
-          "eventType": "Examination",
+          "eventType": "Board Examination",
           "registrationPeriod": "1 October – 05 December 2025",
-          "eventDate": "18 March 2026",
+          "eventDate": "25 March 2026",
           "paymentDueDate": "28 February 2026"
         },
         {
