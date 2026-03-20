@@ -25,23 +25,22 @@ import styles from "./examinations.module.css";
 import examinationsData from "@/data/examinations.json";
 import type { JSX } from "react";
 import Header from "@/components/global/header";
-import { useSearchParams } from "next/navigation";
 
 export default function ExaminationsClient() {
   const { upcomingExaminations, pastExaminations } = examinationsData;
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
   const [showExamNotice, setShowExamNotice] = useState(false);
-  const searchParams = useSearchParams();
 
   const toggleAccordion = (index: number) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
 
   useEffect(() => {
-    if (searchParams.get("examInfo") === "open") {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("examInfo") === "open") {
       setShowExamNotice(true);
     }
-  }, [searchParams]);
+  }, []);
 
   const officialExamRules = [
     "It is your responsibility to ensure that you receive the CORRECT EXAMINATION PAPER.",
