@@ -1,5 +1,56 @@
 [
   {
+    "id": 20,
+    "title": "Board Examination Venues & Instructions – 25 March 2026",
+    "shortDescription": "Official venue confirmations and examination instructions for candidates writing the 25 March 2026 SACPVP Board Examination.",
+    "date": "2026-03-19",
+    "icon": "map-pin",
+    "superImportant": "true",
+    "important": "true",
+    "content": "ANNOUNCEMENT\n\nThe South African Council for the Property Valuers Profession (SACPVP) wishes all candidates well for the Board Examination scheduled on 25 March 2026.\n\nThis announcement provides the official examination venues per region, as well as important instructions applicable to all candidates.\n\nEXAMINATION DETAILS:\n- Format: In-person (physical pen and paper)\n- Type: Closed book examination\n- Duration: 3 hours\n- Time: 10:00 – 13:00\n- Arrival: Candidates must be seated by 09:45\n\nIMPORTANT RULES:\n- No entry after 11:00\n- No leaving before 11:00 (unless approved by invigilator)\n- Bring valid ID or driver's licence\n- Only allowed items: pen, ruler, calculator\n\nLaptop Users:\n- Complete Sections A & B first\n- Submit hard copy before opening spreadsheet\n- No returning to earlier sections after opening laptop\n\nFailure to comply with rules may result in disciplinary action.\n\nPlease download your relevant venue PDF below for exact location details.",
+    "pdfs": [
+      {
+        "city": "Cape Town",
+        "title": "Cape Town Examination Venue",
+        "pdfUrl": "/announcements/20-03-26/Announcement - Cape Town_March 2026.pdf"
+      },
+      {
+        "city": "Durban",
+        "title": "Durban Examination Venue",
+        "pdfUrl": "/announcements/20-03-26/Announcement - Durban_March 2026.pdf"
+      },
+      {
+        "city": "East London",
+        "title": "East London Examination Venue",
+        "pdfUrl": "/announcements/20-03-26/Announcement East London_March 2026.pdf"
+      },
+      {
+        "city": "Port Elizabeth",
+        "title": "Port Elizabeth Examination Venue",
+        "pdfUrl": "/announcements/20-03-26/Announcement Port Elizabeth_March 2026.pdf"
+      },
+      {
+        "city": "Pretoria",
+        "title": "Pretoria Examination Venue",
+        "pdfUrl": "/announcements/20-03-26/Announcement Pretoria_March 2026.pdf"
+      },
+      {
+        "city": "All Venues",
+        "title": "Examination Venues - Various",
+        "pdfUrl": "/examinations/20-03-26/BOARD EXAMINATION VENUES_VARIOUS.pdf"
+      },
+      {
+        "city": "All Candidates",
+        "title": "Examination Rules - March 2026",
+        "pdfUrl": "/examinations/20-03-26/BOARD EXAMINATION RULES_MARCH 2026[46].pdf"
+      }
+    ],
+    "goToPage": {
+      "label": "View more info",
+      "url": "/examinations?examInfo=open"
+    }
+  },
+  {
     "id": 17,
     "title": "Pre-Exam Workshop Moved to 12 & 13 March 2026",
     "shortDescription": "The March 2026 Pre-Exam Workshop has been moved to 12th and 13th March; it will no longer take place on 5th and 6th March.",

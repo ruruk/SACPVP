@@ -32,6 +32,247 @@
   color: #0056b3;
 }
 
+/* Exam notice accordion */
+.examNoticeAccordion {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem 1rem 1.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.examNoticeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.examNoticeTitle {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0056b3;
+}
+
+.examNoticeToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+  border-radius: 6px;
+  padding: 0.45rem 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.examNoticeToggle:hover {
+  background: #eef2f7;
+}
+
+.toggleIcon {
+  color: #0056b3;
+}
+
+.compactDownloadButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.expandedNoticeContent {
+  padding-top: 1rem;
+}
+
+.compactDownloadButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #0056b3;
+  background: #0056b3;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.compactDownloadButton:hover {
+  background: #003d7a;
+  border-color: #003d7a;
+}
+
+.globalExamHeader {
+  margin-bottom: 1rem;
+}
+
+.globalExamTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.globalExamIntro {
+  color: #555;
+}
+
+.globalExamCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.globalCard {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.globalCardTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 0.65rem;
+}
+
+.globalCardIcon {
+  color: #0056b3;
+}
+
+.globalList {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #4b5563;
+}
+
+.globalList li {
+  margin-bottom: 0.45rem;
+}
+
+.venuesSection {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.venuesTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 0.9rem;
+}
+
+.venuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.9rem;
+}
+
+.venueCard {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.9rem;
+}
+
+.venueCard h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0056b3;
+  margin: 0 0 0.45rem 0;
+}
+
+.venueCard p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.officialRulesSection {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.officialRulesTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0056b3;
+  margin: 0 0 0.75rem 0;
+}
+
+.authorityBlock {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.authorityBlock p {
+  margin: 0 0 0.45rem 0;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.authorityBlock p:last-child {
+  margin-bottom: 0;
+}
+
+.rulesHeading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0056b3;
+  margin: 0 0 0.5rem 0;
+}
+
+.rulesIntro {
+  color: #4b5563;
+  margin: 0 0 0.8rem 0;
+  line-height: 1.6;
+}
+
+.officialRulesList {
+  margin: 0;
+  padding-left: 1.4rem;
+  color: #374151;
+}
+
+.officialRulesList li {
+  margin-bottom: 0.6rem;
+  line-height: 1.55;
+}
+
+.rulesClosing {
+  margin: 0.2rem 0;
+  color: #334155;
+  font-weight: 500;
+}
+
+.officialDownloadButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0 0.5rem;
+}
+
 .noExaminations {
   text-align: center;
   padding: 3rem;
@@ -362,6 +603,25 @@
 
   .sectionTitle {
     font-size: 1.5rem;
+  }
+
+  .examNoticeHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .examNoticeTitle {
+    font-size: 1.2rem;
+  }
+
+  .examNoticeToggle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .compactDownloadButton {
+    width: 100%;
+    justify-content: center;
   }
 
   .eventInfo {

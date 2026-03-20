@@ -16,6 +16,30 @@ import {
 import announcements from "@/data/announcements.json";
 import styles from "./announcements-section.module.css";
 
+type AnnouncementPdf = {
+  city?: string;
+  title?: string;
+  pdfUrl: string;
+};
+
+type Announcement = {
+  id: number;
+  title: string;
+  shortDescription: string;
+  date: string;
+  icon: string;
+  important?: string;
+  superImportant?: string;
+  content: string;
+  pdfUrl?: string;
+  pdfs?: AnnouncementPdf[];
+  webUrl?: string;
+  goToPage?: { url: string; label: string };
+  bannerImage?: string;
+};
+
+const announcementsData = announcements as Announcement[];
+
 export default function AnnouncementsSection() {
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
@@ -23,26 +47,21 @@ export default function AnnouncementsSection() {
     setOpenAccordion(openAccordion === id ? null : id);
   };
 
-  // Sort announcements by date (newest first)
-  const sortedAnnouncements = [...announcements].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  const getPriority = (announcement: Announcement) => {
+    if (announcement.superImportant === "true") return 2;
+    if (announcement.important === "true") return 1;
+    return 0;
+  };
 
-  // Get important announcements
-  const importantAnnouncements = sortedAnnouncements.filter(
-    (announcement) => announcement.important === "true"
-  );
+  // Sort announcements by priority first, then date (newest first)
+  const sortedAnnouncements = [...announcementsData].sort((a, b) => {
+    const priorityDiff = getPriority(b) - getPriority(a);
+    if (priorityDiff !== 0) return priorityDiff;
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
 
-  // Get the latest announcement (that's not already in important)
-  const latestAnnouncement = sortedAnnouncements.find(
-    (announcement) => announcement.important !== "true"
-  );
-
-  // Combine important announcements with latest announcement, limit to 3
-  const displayAnnouncements = [
-    ...importantAnnouncements,
-    ...(latestAnnouncement ? [latestAnnouncement] : []),
-  ].slice(0, 3);
+  // Show top 3 by priority/date on home page
+  const displayAnnouncements = sortedAnnouncements.slice(0, 3);
 
   return (
     <section className={styles.announcementsSectionWithDivider}>
@@ -60,7 +79,13 @@ export default function AnnouncementsSection() {
             {displayAnnouncements.map((announcement) => (
               <div
                 key={announcement.id}
-                className={`${styles.accordionItem} ${announcement.important === "true" ? styles.importantItem : ""}`}
+                className={`${styles.accordionItem} ${
+                  announcement.superImportant === "true"
+                    ? styles.superImportantItem
+                    : announcement.important === "true"
+                      ? styles.importantItem
+                      : ""
+                }`}
               >
                 <button
                   className={styles.accordionHeader}
@@ -76,6 +101,11 @@ export default function AnnouncementsSection() {
                       )}
                     </div>
                     <div className={styles.headerText}>
+                      {announcement.superImportant === "true" && (
+                        <span className={styles.superImportantBadge}>
+                          SUPER IMPORTANT
+                        </span>
+                      )}
                       <h3 className={styles.accordionTitle}>
                         {announcement.title}
                       </h3>
@@ -111,6 +141,17 @@ export default function AnnouncementsSection() {
                         {new Date(announcement.date).toLocaleDateString()}
                       </span>
                       <div className={styles.actionButtons}>
+                        {announcement.pdfs?.map((pdf, index) => (
+                          <a
+                            key={`${announcement.id}-pdf-${index}`}
+                            href={pdf.pdfUrl}
+                            download
+                            className={styles.downloadLink}
+                          >
+                            <Download size={16} />
+                            <span>{pdf.title || pdf.city || "Download PDF"}</span>
+                          </a>
+                        ))}
                         {announcement.pdfUrl && (
                           <a
                             href={announcement.pdfUrl}
